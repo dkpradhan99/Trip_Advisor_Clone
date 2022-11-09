@@ -1,0 +1,9 @@
+/* Normal footer */
+#footer {
+  height: 20%;
+  background-color: #faf1ed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
