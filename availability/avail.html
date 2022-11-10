@@ -48,7 +48,7 @@
         #mid{
             display:grid;
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 500px;
+            grid-template-rows: 2000px;
             border:1px solid red;
             width:80%;
             margin:auto;
@@ -58,6 +58,7 @@
         }
         #mid>div{
             border:1px solid blue;
+            /* height:500px */
             
         }
         #mid>div+div{
@@ -69,7 +70,7 @@
         #butto{
             display:flex;
             justify-content: space-between;
-            padding:20px
+            padding:20px;
         }
         #mid>div>h1{
             font-size: 35px;
@@ -79,17 +80,23 @@
         }
         #mid>div>h1+p{
             text-decoration: underline;
-            color:rgba(120,120,120,255)
+            color:rgba(120,120,120,255);
+            cursor: pointer;
+            margin-top:-18px;
+            margin-bottom:25px;
+        }
+        #butto{
+            margin-top:-40px
         }
         #butto>button{
-            width:220px;
+            width:230px;
             height:50px;
             border-radius: 25px;
             background-color: rgba(242,178,3,255);
             font-weight: bold;
-            font-size: 15px;
+            font-size: 16px;
             border:none;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             cursor: pointer;
         }
         #butto>button:hover{
@@ -101,11 +108,61 @@
             margin-top:-6px;
             margin-left:-20px;
         }
+        #box{
+            height:14px;
+            width:140px;
+            border:1px solid black;
+            border-radius: 5px;
+            font-size:14px;
+            padding:5px;
+            text-align: center;
+        }
+        #right{
+            margin-left:505px;
+            margin-top:-35px;
+            cursor: pointer;
+        }
+        #right1{
+            margin-top: -38px;
+            margin-left:540px;
+            cursor: pointer;
+        }
+        .underline{
+            color:rgba(120,120,120,255);
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:18px;;
+        }
+        .underline+p{
+            color:rgba(120,120,120,255);;
+            margin-top: 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:20px;
+        }
+        #up{
+            margin-top:-46px;
+            color:rgba(120,120,120,255);
+
+        }
+        #box1{
+            display: flex;
+            
+        }
+        #box1>p{
+            margin-top: -3px;
+            margin-left:20px;
+        }
+        #box1>p:hover{
+        text-decoration: underline;
+        }
+        #box1>img{
+            width:3.6%;
+            height: 22px;
+            /* margin-left:-7px */
+        }
 
     </style>
  
 </head>
-#butto>button
 <body>
     <div id="navbar"></div>
     <div id="nav1">
@@ -128,19 +185,40 @@
             <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/74/9d/1b.jpg" alt="">
         </div>
         <div>
-            <p id="box">LIKELY TO SELL OUT*  🤍</p>
-            <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            <p id="box">LIKELY TO SELL OUT*  </p>
+           <p id="right"><i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+            
+            <p id="right1">🤍</p>
            
             <h1>Four-Day Private Luxury Golden Triangle Tour to Agra and Jaipur From New Delhi</h1>
             <p>By Golden Triangle Delhi Agra Jaipur Tour.</p>
-            <p>210 reviews</p>
-            <p>To explore India’s Golden Triangle from Delhi, you’d need to handle all the logistics, including trains, hotels, cabs, tickets, and local guides. Leave all the planning to someone else on this private tour, which includes a driver-guide, tickets, and transport by private air-conditioned vehicle. Tour must-visit sights such as the Taj Mahal, Agra Fort, and Amber Fort.</p>
+            <div id="box1">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7332eddf-1a17-47bc-9680-d290ea10657d/d4i51r3-06f14ad9-d012-49bf-8363-2201d4ec9336.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzczMzJlZGRmLTFhMTctNDdiYy05NjgwLWQyOTBlYTEwNjU3ZFwvZDRpNTFyMy0wNmYxNGFkOS1kMDEyLTQ5YmYtODM2My0yMjAxZDRlYzkzMzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AW_owHGhYXDf8ahhW6Iy-Ffqd21EOtvJLWDfCXoRE0c" alt="">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7332eddf-1a17-47bc-9680-d290ea10657d/d4i51r3-06f14ad9-d012-49bf-8363-2201d4ec9336.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzczMzJlZGRmLTFhMTctNDdiYy05NjgwLWQyOTBlYTEwNjU3ZFwvZDRpNTFyMy0wNmYxNGFkOS1kMDEyLTQ5YmYtODM2My0yMjAxZDRlYzkzMzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AW_owHGhYXDf8ahhW6Iy-Ffqd21EOtvJLWDfCXoRE0c" alt="">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7332eddf-1a17-47bc-9680-d290ea10657d/d4i51r3-06f14ad9-d012-49bf-8363-2201d4ec9336.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzczMzJlZGRmLTFhMTctNDdiYy05NjgwLWQyOTBlYTEwNjU3ZFwvZDRpNTFyMy0wNmYxNGFkOS1kMDEyLTQ5YmYtODM2My0yMjAxZDRlYzkzMzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AW_owHGhYXDf8ahhW6Iy-Ffqd21EOtvJLWDfCXoRE0c" alt="">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7332eddf-1a17-47bc-9680-d290ea10657d/d4i51r3-06f14ad9-d012-49bf-8363-2201d4ec9336.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzczMzJlZGRmLTFhMTctNDdiYy05NjgwLWQyOTBlYTEwNjU3ZFwvZDRpNTFyMy0wNmYxNGFkOS1kMDEyLTQ5YmYtODM2My0yMjAxZDRlYzkzMzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AW_owHGhYXDf8ahhW6Iy-Ffqd21EOtvJLWDfCXoRE0c" alt="">
+                <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7332eddf-1a17-47bc-9680-d290ea10657d/d4i51r3-06f14ad9-d012-49bf-8363-2201d4ec9336.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzczMzJlZGRmLTFhMTctNDdiYy05NjgwLWQyOTBlYTEwNjU3ZFwvZDRpNTFyMy0wNmYxNGFkOS1kMDEyLTQ5YmYtODM2My0yMjAxZDRlYzkzMzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AW_owHGhYXDf8ahhW6Iy-Ffqd21EOtvJLWDfCXoRE0c" alt="">
+                <p>210 reviews 	• ♥ Recommended by 99% of travellers 🛈</p>
+            </div>
+            
+            <p class="underline">To explore India’s Golden Triangle from Delhi, you’d need to handle all the logistics, including trains, hotels, cabs, tickets, and local guides. Leave all the planning to someone else on this private tour, which includes a driver-guide, tickets, and transport by private air-conditioned vehicle. Tour must-visit sights such as the Taj Mahal, Agra Fort, and Amber Fort.</p>
             <p>from</p>
             <div id="butto">
                 <h1>₹15,959.84</h1>
                 <button>Check availability</button>
             </div>
-            <p></p>
+            <p id="up">per adult (price varies by group size)</p>
+            <p>Lowest price guaranteeFree cancellation</p>
+            <p>Ages 0-99</p>
+            <p>Duration:4 days</p>
+            <p>Start time: Check availability</p>
+            <p>Ticket type:Mobile</p>
+            <p>German, Russian, English, French, Spanish</p>
+            <h3>Highlights</h3>
+            <p>Travel the Golden Triangle from Delhi by private air-conditioned vehicle</p>
+            <p>Visit Delhi, Agra, and Jaipur in four days, without travel or ticket hassles </p>
+            <p>Explore the Taj Mahal, Agra Fort, and Amber Fort with personal guides </p>
+            <p>Option to include 4- or 5-star hotels with daily breakfast</p>
         </div>
     </div>
 </body>
