@@ -3,7 +3,7 @@
     padding: 0;
 }
 #nav2{
-    border:1px solid rgb(186, 173, 173);
+    border:2px solid rgb(186, 173, 173);
     height:40px;
     font-size:14px;
     font-family: 'Trip Sans VF', 'Trip Sans', Arial, sans-serif ;
@@ -88,4 +88,118 @@
     font-family: sans-serif;
 }
 
+#box{
+    border:0px solid black;
+    width:80%;
+    height:900px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    border:0px solid red;
+    width:30%;
+    height:auto;
+}
+#container{
+    border: 0px solid blue;
+    width: 70%;
+    height:auto;
+  
+}#c1{
+    border: 0px solid yellow;
+}
+iframe{
+    width:100%;
+    height: 200px;
+}
+/* #static{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+} */
+#static img{
+    width:23%;
+    margin-left: 10px;
+    height:200px;
+    margin-top: 10px;
+}
+#pop{
+    margin-left: 10px;
+}
 
+
+
+#c2{
+    
+    border:0px solid orange;
+    margin-top: 50px;
+    width:100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    /* border: 1px solid green;  */
+
+}
+#c2 div{
+    border:  0px solid rgb(221, 25, 57)
+}
+/* #hotelData{
+  
+     border: 1px solid rgb(221, 25, 57);
+     display: flex;
+     width:100%;
+     height:auto
+} */
+
+/* #hotelData:nth-child(1){
+    border: 1px solid green;
+    height: 200px;
+    width:100%
+}
+#hotelData:nth-child(2){
+    border: 1px solid rgb(19, 14, 19);
+    height: 200px;
+    width:100%
+} */
+#hotelImage{
+    width:44%;
+}
+ #hotelImage img{
+    width:100%;
+    height:100%
+}
+
+#detail{
+    width:56%;
+    border:0px solid rgb(229, 42, 42);
+    height:100%;
+    /* margin-top: 30px; */
+    /* margin-left: -350px; */
+}
+#detail h4{
+font-size: 25px;
+
+}
+
+#detail p{
+    
+  font-size: 25px;  
+}
+#hotel{
+    display: flex;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#div1{
+   
+    width:50%
+}
+#div2{
+    width:50%;
+    margin-left: 20px;
+}
+#div1 img{
+    width:100%;
+    height:100%
+}
