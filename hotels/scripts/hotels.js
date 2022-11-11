@@ -231,4 +231,4 @@ const hotels = [
     Rating: 3.8,
   },
 ];
-export{hotels}
+export { hotels };
