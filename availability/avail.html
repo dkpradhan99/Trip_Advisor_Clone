@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Homepage/index.css">
+    <link rel="stylesheet" href="./avail.css">
     <script
     src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"
@@ -53,16 +54,17 @@
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
         }
-        #mid>div{
+        /* #mid>div{
             border:1px solid blue;
-            /* height:500px */
+            height:500px
             
-        }
+        } */
         #mid>div+div{
             margin-left: 16px;
         }
         img{
             width:100%;
+            /* margin-top:-2000px */
         }
         #butto{
             display:flex;
@@ -72,8 +74,9 @@
         #mid>div>h1{
             font-size: 35px;
             font-weight:bold;
-            
+            margin-top: 20px;;
             width:550px;
+            margin-bottom:15px;
         }
         #mid>div>h1+p{
             text-decoration: underline;
@@ -83,9 +86,14 @@
             margin-bottom:25px;
         }
         #butto{
-            margin-top:-40px
+            display:flex;
+            flex-direction:row-reverse;
+            margin-top:-40px;
+            margin-bottom:25px;
+            border:1px solid red;
         }
         #butto>button{
+            margin-left:20px;
             width:230px;
             height:50px;
             border-radius: 25px;
@@ -103,9 +111,11 @@
             font-size: 42px;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin-top:-6px;
-            margin-left:-20px;
+            margin-left:-22px;
         }
         #box2{
+            margin-top:15px;
+            /* margin-bottom:15px; */
             height:14px;
             width:140px;
             border:1px solid black;
@@ -116,13 +126,19 @@
         }
         #rightt{
             margin-left:505px;
-            margin-top:-35px;
+            margin-top:-25px;
             cursor: pointer;
         }
         #right1{
-            margin-top: -38px;
-            margin-left:540px;
+            margin-top: -20px;
+            /* margin-left:0px; */
             cursor: pointer;
+        }
+        #right1+p{
+            text-decoration: underline;
+            color:grey;
+            margin-top:5px;
+            margin-bottom:20px;
         }
         .underline{
             color:rgba(120,120,120,255);
@@ -132,16 +148,24 @@
         .underline+p{
             color:rgba(120,120,120,255);;
             margin-top: 30px;
+            margin-bottom:15px;
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size:20px;
         }
         #up{
             margin-top:-46px;
+            margin-bottom:35px;
             color:rgba(120,120,120,255);
 
         }
+        #up+p{
+            text-decoration: underline;
+            cursor:pointer;
+            margin-bottom: 40px;
+        }
         #box1{
             display: flex;
+            margin-bottom: 20px;
             
         }
         #box1>p{
@@ -184,16 +208,13 @@
             <p>Asia > India > National Capital Territory of Delhi > New Delhi > Places to visit in New Delhi > New Delhi Tours > Tours and Tickets</p>
         </div>
         <div id="mid">
-            <div>
-                <img src="https://media-cdn.tripadvisor.com/media/attractions-splice-spp-720x480/06/74/9d/1b.jpg" alt="">
+            <div id="container">
             </div>
-            <div>
+            <div id="container1">
                 <p id="box2">LIKELY TO SELL OUT*  </p>
                <p id="rightt"><i class="fa-solid fa-arrow-up-from-bracket"></i></p>
                 
                 <p id="right1">🤍</p>
-               
-                <h1>Four-Day Private Luxury Golden Triangle Tour to Agra and Jaipur From New Delhi</h1>
                 <p>By Golden Triangle Delhi Agra Jaipur Tour.</p>
                 <div id="box1">
                     <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7332eddf-1a17-47bc-9680-d290ea10657d/d4i51r3-06f14ad9-d012-49bf-8363-2201d4ec9336.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzczMzJlZGRmLTFhMTctNDdiYy05NjgwLWQyOTBlYTEwNjU3ZFwvZDRpNTFyMy0wNmYxNGFkOS1kMDEyLTQ5YmYtODM2My0yMjAxZDRlYzkzMzYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AW_owHGhYXDf8ahhW6Iy-Ffqd21EOtvJLWDfCXoRE0c" alt="">
@@ -207,21 +228,72 @@
                 <p class="underline">To explore India’s Golden Triangle from Delhi, you’d need to handle all the logistics, including trains, hotels, cabs, tickets, and local guides. Leave all the planning to someone else on this private tour, which includes a driver-guide, tickets, and transport by private air-conditioned vehicle. Tour must-visit sights such as the Taj Mahal, Agra Fort, and Amber Fort.</p>
                 <p>from</p>
                 <div id="butto">
-                    <h1>₹15,959.84</h1>
+                    
                     <button>Check availability</button>
                 </div>
                 <p id="up">per adult (price varies by group size)</p>
-                <p>Lowest price guaranteeFree cancellation</p>
-                <p>Ages 0-99</p>
-                <p>Duration:4 days</p>
-                <p>Start time: Check availability</p>
-                <p>Ticket type:Mobile</p>
-                <p>German, Russian, English, French, Spanish</p>
-                <h3>Highlights</h3>
-                <p>Travel the Golden Triangle from Delhi by private air-conditioned vehicle</p>
-                <p>Visit Delhi, Agra, and Jaipur in four days, without travel or ticket hassles </p>
-                <p>Explore the Taj Mahal, Agra Fort, and Amber Fort with personal guides </p>
-                <p>Option to include 4- or 5-star hotels with daily breakfast</p>
+                <p>Lowest price guarantee • Free cancellation</p>
+                <p>&#128345 Ages 0-99</p>
+                <p>&#128345 Duration:4 days</p>
+                <p>&#128345 Start time: Check availability</p>
+                <p>&#128345 Ticket type:Mobile</p>
+                <p>&#128345 German, Russian, English, French, Spanish</p>
+                <nav class="navigation">
+                    <ul class="mainmenu">
+                      <!-- <li><a href="">Home</a></li> -->
+                      <!-- <li><a href="">About</a></li> -->
+                      <li><a href="">What's included</a>
+                        <ul class="submenu">
+                          <li>• Breakfast</a></li>
+                          <li>• Transport by private air-conditioned vehicle</a></li>
+                          <li>• English speaking private guide for 12 days</a></li>
+                          <li>• 11 Nights accomadation in 3-star hotels With Breakfast</a></li>
+                          <li>• Boat Ride at Varanasi</a></li>
+                          <li>• Tuk-Tuk Ride</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="">Departure and return</a>
+                        <ul class="submenu">
+                          <li>• Traveller pickup is offered.</li>
+                           <li>• Pickup from Hotel Lobby</li>
+                            <li>• Hotel pickup is offered. View the hotel list on our checkout page to see if yours is included among the pickup points.</li>
+                          <li>• Transport by private air-conditioned vehicle</a></li>
+                          <li>• English speaking private guide for 12 days</a></li>
+                        </ul>
+                      </li>
+            
+                      <li><a href="">Accesibility</a>
+                        <ul class="submenu">
+                          <li>• Wheelchair accessible</li>
+                           <li>• Service animals allowed</li>
+                            <li>• Near public transportation</li>
+                          <li>If you have questions about accessibility, we’d be happy to help. Just call the number below and reference the product code: 85404P29</li>
+                        </ul>
+                      </li>
+            
+                      <li><a href="">Additional information</a>
+                        <ul class="submenu">
+                          <li>• Confirmation will be received at time of booking</li>
+                           <li>• Please advise any specific dietary requirements at time of booking</li>
+                            <li>• May be operated by a multi-lingual guide</li>
+                            <li>• Most travellers can participate</li>
+                            <li>• This is a private tour/activity. Only your group will participate</li>
+                          <!-- <li>If you have questions about accessibility, we’d be happy to help. Just call the number below and reference the product code: 85404P29</li> -->
+                        </ul>
+                      </li>
+                    
+                      <li><a href="">Cancellation policy</a>
+                        <ul class="submenu">
+                            <li>For a full refund, cancel at least 24 hours in advance of the start date of the experience.</li> 
+                          </ul>
+                    </li>
+                    <li><a href="">Help</a>
+                        <ul class="submenu">
+                          <li>If you have questions about this tour or need help making your booking, we’d be happy to help. Just call the number below and reference the product code: 85404P29</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
             </div>
         </div>
 
