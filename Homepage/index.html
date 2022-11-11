@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=   , initial-scale=1.0" />
     <title>Traveladvisor</title>
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="../Homepage/styles/swiper-bundle.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./styles/normalFooter.css" />
+    <link rel="stylesheet" href="../Homepage/styles/slider.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -76,10 +76,6 @@
       </div>
     </div>
 
-    <!-- <div id="top-exp">
-        <div id="best-city"></div>
-      </div> -->
-
     <div id="search-section">
       <img
         src="https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans.webp"
@@ -104,6 +100,55 @@
         />
       </div>
     </div>
+
+    <!-- Scenic automn spots-->
+    <div id="Scenic-spots">
+      <h4>Scenic autumn spots</h4>
+      <div class="sliding-container swiper mySwiper">
+        <div class="card_wrapper swiper-wrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- more to explore -->
+    <div id="more-to-explore">
+      <h4>More to explore</h4>
+      <div id="content-container">
+        <div>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/ab/94/ba/2de5214a-d5dc-42d2.jpg?w=400&h=-1&s=1"
+            alt=""
+          />
+          <a class="heading" href="#">From Traveladvisor</a>
+          <a class="sub-heading" href="#"
+            >5 beautiful hill stations in South India</a
+          >
+        </div>
+        <div>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/c8/20/d4/45276d36-cc36-4a32.jpg?w=400&h=-1&s=1"
+            alt=""
+          />
+          <a class="heading" href="#">From Traveladvisor</a>
+          <a class="sub-heading" href="#"
+            >11 beautiful places in India that have to be seen to be believed</a
+          >
+        </div>
+        <div>
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/c8/2e/9a/2520956e-5665-4e9f.jpg?w=400&h=-1&s=1"
+            alt=""
+          />
+          <a class="heading" href="#">From Traveladvisor</a>
+          <a class="sub-heading" href="#"
+            >Best time to visit Dubai for great weather and deals</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- green-section -->
     <div id="green-section">
       <div id="boxx">
         <div>
@@ -126,7 +171,8 @@
 
     <!-- Footer -->
     <div id="main-footer"></div>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./scripts/main.js"></script>
+    <script src="../Homepage/scripts/slider.js"></script>
   </body>
 </html>
