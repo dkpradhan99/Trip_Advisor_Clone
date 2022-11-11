@@ -70,11 +70,12 @@ let dom = (data) => {
 dom(hotel_array);
 localStorage.setItem("data", JSON.stringify(hotel_array));
 
-// let d = JSON.parse(localStorage.getItem("Hotel-Details")) || [];
+ let d = JSON.parse(localStorage.getItem("Hotel-Details")) || [];
 
 let something = (el) => {
-  // d.push(el);
-  localStorage.setItem("Hotel-Details", JSON.stringify(el));
+   d.push(el);
+  localStorage.setItem("Hotel-Details", JSON.stringify(d));
+  window.location.href="../availability/avail.html"
 };
 
 //---------------------sort by price------------------
