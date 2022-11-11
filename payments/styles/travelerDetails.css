@@ -1,0 +1,98 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#navbar{
+    border: 0px solid red;
+    height: 150px;
+    width: 70%;
+    margin: auto;
+    
+}
+#main{
+    border: 0px solid red;
+    height: auto;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+#main>h2{
+    font-weight: 500;
+}
+#para1{
+    margin-top: -5px;
+    width: 100%;
+    background-color: rgb(216, 243, 236);
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+}
+#para1>p{
+    margin-left: 15px;
+}
+.contact{
+    width: 60%;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-around;
+
+}
+.redStar{
+    color:red
+}
+.boxSize{
+    border-color: black;
+    outline: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+
+    border-radius: 5px;
+}
+#next{
+    width: 42%;
+    border: 0px;
+    margin-left: 25%;
+    background-color: black;
+    color: white;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-radius: 50px;
+}
+#next:hover{
+    background-color: rgb(42, 41, 41);
+}
+#logo {
+    /* border: 1px solid; */
+    width: 20%;
+    margin-top: 4%;
+
+}
+#payStatus{
+    border: 0px solid black;
+    width: 50%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-between;
+
+}
+#payStatus>div{
+    border: 0px solid teal;
+    width: 30%;
+    text-align: center;
+}
+.statusBox{
+    height: 5px;
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 10px;
+
+    margin-bottom: -10%;
+
+}
+p{
+    font-weight: 600;
+}
+
+
