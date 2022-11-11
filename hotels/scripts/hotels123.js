@@ -74,4 +74,5 @@ let d = JSON.parse(localStorage.getItem("Hotel-Details")) || [];
 let something = (el) => {
   d.push(el);
   localStorage.setItem("Hotel-Details", JSON.stringify(d));
+  window.location.href="../availability/avail.html"
 };
