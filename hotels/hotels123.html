@@ -1,72 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/hotels123.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/hotels123.css" />
+    <link rel="stylesheet" href="../Homepage/index.css" />
     <title>Document</title>
-</head>
-<body>
-    <div id="navbar"></div>
-    <div id="nav2">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <!-- Main-container -->
+    <div id="main-container">
+      <div id="nav2">
         <div id="main">
-        <div id="hotel">Hotels</div>
-        <div>Things to do</div>
-        <div>Restaurants</div>
-        <div>Flights</div>
-        <div>Holiday Homes</div>
-        <div>Package Holidays</div>
-        <div>Cruises</div>
-        <div id="dot">...</div>
-        </div>    
-    </div>
-    <div id="slider">
+          <div id="hotel">Hotels</div>
+          <div>Things to do</div>
+          <div>Restaurants</div>
+          <div>Flights</div>
+          <div>Holiday Homes</div>
+          <div>Package Holidays</div>
+          <div>Cruises</div>
+          <div id="dot">...</div>
+        </div>
+      </div>
+      <div id="slider">
         <div id="overlay"></div>
         <div id="content">
-            <h1>Hotels and Places to Stay</h1>
-        </div>   
-    </div>
-    <div id="box">
+          <h1>Hotels and Places to Stay</h1>
+        </div>
+      </div>
+      <div id="box">
         <div id="left">
-            <div class="map">
-
-                <div class="gmap_canvas">
-        
-                    <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        
-                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-        
-                </div>
-        
+          <div class="map">
+            <div class="gmap_canvas">
+              <iframe
+                id="gmap_canvas"
+                src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+              ></iframe>
             </div>
-
-
-
+          </div>
         </div>
-        
+
         <div id="container">
-            <div id="c1">
+          <div id="c1">
             <div id="static">
-                <h1 id="pop">Popular Hotels</h1>
-                <div>
-                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/09/caption.jpg?w=300&h=300&s=1" alt="">
-                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/20/caption.jpg?w=300&h=300&s=1" alt="">
-                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/94/caption.jpg?w=300&h=300&s=1" alt="">
-                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/e8/caption.jpg?w=300&h=300&s=1" alt="">
+              <h1 id="pop">Popular Hotels</h1>
+              <div>
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/09/caption.jpg?w=300&h=300&s=1"
+                  alt=""
+                />
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/20/caption.jpg?w=300&h=300&s=1"
+                  alt=""
+                />
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/94/caption.jpg?w=300&h=300&s=1"
+                  alt=""
+                />
+                <img
+                  src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/e8/caption.jpg?w=300&h=300&s=1"
+                  alt=""
+                />
+              </div>
             </div>
-            </div>
+          </div>
+          <div id="c2">
+            <!-- <div id="hotelData"> -->
+            <div id="hotelImage"></div>
+            <div id="detail"></div>
+            <!-- </div> -->
+          </div>
         </div>
-            <div id="c2">
-                <!-- <div id="hotelData"> -->
-                    <div id="hotelImage"></div>
-                    <div id="detail"></div>
-                <!-- </div> -->
-            </div>
-        </div>
-    
+      </div>
     </div>
-    
-</body>
-<script src="./scripts/hotels123.js" type="module"></script>
+
+    <!-- Footer -->
+    <div id="main-footer"></div>
+  </body>
+  <script src="./scripts/hotels123.js" type="module"></script>
+  <script type="module" src="../Homepage/scripts/main.js"></script>
 </html>

@@ -88,7 +88,7 @@ body {
   background-color: black !important;
 }
 
-#container {
+#containers {
   /* border: 2px solid blue; */
   height: auto;
   margin-top: 4.5%;
@@ -205,7 +205,7 @@ body {
   margin-top: 20px;
 }
 
-#green-section > #box {
+#green-section > #boxx {
   /* border: 1px solid; */
   width: 80%;
   height: 100%;
@@ -213,7 +213,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-#box > div:nth-child(1) {
+#boxx > div:nth-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -221,7 +221,7 @@ body {
   gap: 10px;
 }
 
-#box > div:nth-child(1) > p {
+#boxx > div:nth-child(1) > p {
   margin: 15px 0 40px 10px;
   color: #fff;
   font-size: 38px;
@@ -231,7 +231,7 @@ body {
   line-height: 40px;
 }
 
-#box > div:nth-child(1) > button {
+#boxx > div:nth-child(1) > button {
   background-color: #000;
   color: #fff;
   padding: 10px 16px;
@@ -241,7 +241,7 @@ body {
   border: none;
 }
 
-#box > div:nth-child(1) > img {
+#boxx > div:nth-child(1) > img {
   width: 100px;
 }
 #main-footer {
@@ -265,7 +265,7 @@ body {
   justify-content: space-between;
 }
 
-#left {
+#lefty {
   /* border: 1px solid red; */
   width: 65%;
   margin: auto;
@@ -273,7 +273,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin-left: 0px;
 }
-#left > div {
+#lefty > div {
   /* border: 1px solid blue; */
   margin: auto;
   margin-left: 0px;

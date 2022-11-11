@@ -24,7 +24,7 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 
-  if (document.documentElement.scrollTop > 10) {
+  if (document.documentElement.scrollTop > 60) {
     header.style.borderBottom = "1px solid rgb(220, 220, 220)";
   } else {
     header.style.border = "none";

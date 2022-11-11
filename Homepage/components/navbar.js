@@ -2,10 +2,7 @@ const navbar = () => {
   return `<div id="navbar">
     <div id="logo">
       <a href="./index.html">
-        <img
-          src="./images/Navbar logo.png"
-          alt="TripAdvisor logo"
-        />
+      <img src="../images/Navbar logo.png" alt="TripAdvisor logo" />
       </a>
     </div>
     <div id="navRight-section">

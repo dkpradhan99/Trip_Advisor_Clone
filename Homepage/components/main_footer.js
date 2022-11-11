@@ -1,7 +1,7 @@
 const main_footer = () => {
   return `
     <div id="section-1">
-    <div id="left">
+    <div id="lefty">
       <div class="column">
         <p>About Traveladvisor</p>
         <a href="#">About Us</a>
@@ -45,7 +45,7 @@ const main_footer = () => {
   <div id="section-2">
      <div class="left-side">
         <div class="copyright">
-          <img src="./images/Travel Advisor logo.png" alt="" />
+          <img src="../images/Travel Advisor logo.png" alt="" />
           <span>&#169 2022 Tripadvisor LLC All rights reserved.</span>
         
         </div>
