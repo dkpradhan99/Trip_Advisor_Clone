@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/hotels123.css" />
     <link rel="stylesheet" href="../Homepage/index.css" />
-    <script src="https://kit.fontawesome.com/4dbaa63c16.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/4dbaa63c16.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
   </head>
   <body>
@@ -49,19 +52,31 @@
           </div>
           <div id="sort_btn">
             <h3>Best Values</h3>
-            <button id="sort_lth"><i class="fa-solid fa-circle"></i>  Price low to high</button>
-            <button id="sort_htl"><i class="fa-solid fa-circle"></i>  Price high to low</button>
+            <button id="sort_lth">
+              <i class="fa-solid fa-circle"></i> Price low to high
+            </button>
+            <button id="sort_htl">
+              <i class="fa-solid fa-circle"></i> Price high to low
+            </button>
           </div>
-           <div id="sort_cc">
+          <div id="sort_cc">
             <h3>Categories</h3>
-            <button id="filter_ac"><i class="fa-solid fa-circle"></i>   Ac</button>
-            <button id="filter_nonac"><i class="fa-solid fa-circle"></i>   Non Ac</button>
-           </div>
-           <div id="rate">
+            <button id="filter_ac">
+              <i class="fa-solid fa-circle"></i> Ac
+            </button>
+            <button id="filter_nonac">
+              <i class="fa-solid fa-circle"></i> Non Ac
+            </button>
+          </div>
+          <div id="rate">
             <h3>Traveller Rating</h3>
-            <button><i class="fa-solid fa-circle"></i> Rating < ⭐⭐⭐⭐</button>
-            <button><i class="fa-solid fa-circle"></i> Rating > ⭐⭐⭐⭐</button>
-           </div>
+            <button id="ratingLH">
+              <i class="fa-solid fa-circle"></i> Rating > ⭐⭐⭐⭐
+            </button>
+            <button id="ratingHL">
+              <i class="fa-solid fa-circle"></i> Rating < ⭐⭐⭐⭐
+            </button>
+          </div>
         </div>
 
         <div id="container">
@@ -69,7 +84,7 @@
             <div id="static">
               <h1 id="pop">Popular Hotels</h1>
               <div>
-                <img 
+                <img
                   src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/21/88/be/09/caption.jpg?w=300&h=300&s=1"
                   alt=""
                 />
@@ -98,13 +113,10 @@
               </select>
             </label> -->
             <label class="dropdown">
+              <div class="dd-button">Best Value</div>
 
-              <div class="dd-button">
-                Best Value
-              </div>
-            
-              <input type="checkbox" class="dd-input" id="test">
-            
+              <input type="checkbox" class="dd-input" id="test" />
+
               <ul class="dd-menu">
                 <li>All</li>
                 <li id="sub-item2">Price low to high</li>
@@ -114,16 +126,10 @@
                   <a href="http://rane.io">Link to Rane.io</a>
                 </li> -->
               </ul>
-              
             </label>
           </div>
-          
-          <div id="c2">
-            <!-- <div id="hotelData"> --> 
-            <div id="hotelImage"></div>
-            <div id="detail"></div>
-            <!-- </div> -->
-          </div>
+
+          <div id="c2"></div>
         </div>
       </div>
     </div>

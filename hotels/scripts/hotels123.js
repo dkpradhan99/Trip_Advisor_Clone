@@ -1,12 +1,19 @@
 import { hotels } from "./hotels.js";
 
-let hotel_array = hotels;
-var cont2 = document.getElementById("c2");
+let hotel_arr = hotels;
+
+var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
+
+localStorage.setItem("data", JSON.stringify(hotel_arr));
+
 let dom = (data) => {
-  let hotelImage = document.getElementById("hotelImage");
+  var cont2 = document.getElementById("c2");
+  cont2.innerHTML = null;
+
+  let hotelImage = document.createElement("div");
   //  hotelImage.innerHTML = null;
 
-  let detail = document.getElementById("detail");
+  let detail = document.createElement("div");
   //  detail.innerHTML = null;
 
   //   let hotdata = document.getElementById("hotelData");
@@ -61,21 +68,23 @@ let dom = (data) => {
     // cont2.append(hotdata)
     div1.append(image);
     hotelImage.append(div1);
+
     div2.append(title, rooms, price, AC, rating);
     detail.append(div2);
+
     div.append(div1, div2);
+
     cont2.append(div);
   });
 };
 dom(hotel_array);
-localStorage.setItem("data", JSON.stringify(hotel_array));
 
- let d = JSON.parse(localStorage.getItem("Hotel-Details")) || [];
+let d = JSON.parse(localStorage.getItem("Hotel-Details")) || [];
 
 let something = (el) => {
-   d.push(el);
+  d.push(el);
   localStorage.setItem("Hotel-Details", JSON.stringify(d));
-  window.location.href="../availability/avail.html"
+  window.location.href = "../availability/avail.html";
 };
 
 //---------------------sort by price------------------
@@ -117,22 +126,26 @@ let something = (el) => {
 // }
 
 let sort_lth = document.getElementById("sort_lth");
+
 sort_lth.onclick = () => {
-  cont2.innerHTML = null;
-  let userData = JSON.parse(localStorage.getItem("data"));
+  var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
   //console.log(typeof Price)
-  userData.sort((a, b) => a.Price - b.Price);
-  localStorage.setItem("low", JSON.stringify(userData));
-  dom(userData);
+
+  hotel_array.sort((a, b) => a.Price - b.Price);
+
+  localStorage.setItem("data", JSON.stringify(hotel_array));
+  dom(hotel_array);
 };
 
 let sort_htl = document.getElementById("sort_htl");
 sort_htl.onclick = () => {
-  let userData = JSON.parse(localStorage.getItem("data"));
+  var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
+  //console.log(typeof Price)
 
-  userData.sort((a, b) => b.Price - a.Price);
-  localStorage.setItem("high", JSON.stringify(userData));
-  dom(userData);
+  hotel_array.sort((a, b) => b.Price - a.Price);
+
+  localStorage.setItem("data", JSON.stringify(hotel_array));
+  dom(hotel_array);
 };
 // function sortLtoH(){
 //   let userData =JSON.parse(localStorage.getItem("sh"))
@@ -167,22 +180,47 @@ document.getElementById("filter_ac").addEventListener("click", ac_filt);
 
 function ac_filt() {
   //console.log("abha")
-  let data = JSON.parse(localStorage.getItem("data"));
-  let f1 = data.filter(function (el) {
+  var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
+  let f1 = hotel_array.filter(function (el) {
     return el.Ac == true;
   });
   // dom(f1)
-  localStorage.setItem("ac", JSON.stringify(f1));
+  // localStorage.setItem("data", JSON.stringify(f1));
+  dom(f1);
 }
 
 document.getElementById("filter_nonac").addEventListener("click", non_filt);
 
 function non_filt() {
   // console.log(data)
-  let data = JSON.parse(localStorage.getItem("data"));
-  let f1 = data.filter(function (el) {
+  let hotel_array = JSON.parse(localStorage.getItem("data"));
+  let f1 = hotel_array.filter(function (el) {
     return el.Ac == false;
   });
-  // dom(f1)
-  localStorage.setItem("nonac", JSON.stringify(f1));
+  dom(f1);
+  // localStorage.setItem("nonac", JSON.stringify(f1));
 }
+
+let ratingLH = document.getElementById("ratingLH");
+
+ratingLH.addEventListener("click", function () {
+  var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
+  //console.log(typeof Price)
+
+  hotel_array.sort((a, b) => b.Rating - a.Rating);
+
+  localStorage.setItem("data", JSON.stringify(hotel_array));
+  dom(hotel_array);
+});
+
+let ratingHL = document.getElementById("ratingHL");
+
+ratingHL.addEventListener("click", function () {
+  var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
+  //console.log(typeof Price)
+
+  hotel_array.sort((a, b) => a.Rating - b.Rating);
+
+  localStorage.setItem("data", JSON.stringify(hotel_array));
+  dom(hotel_array);
+});
