@@ -1,0 +1,35 @@
+#main>p1>a{
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
+    
+}
+#payImage{
+    width: 100%;
+    padding-top: 2%;
+    margin-top: 20%;
+}
+#payPara{
+    width: 30%;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+#payPara>div{
+    border: 0px solid black;
+    width: 50%;
+}
+.payInputBox{
+    width: 60%;
+    height: 50px;
+}
+
+#expiryDiv{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+#cvvi{
+
+    width: 50%;
+}

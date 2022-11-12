@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/290605cd52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/travelerDetails.css">
+    <link rel="stylesheet" href="./styles/paymentDetails.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <img id="logo" src="http://127.0.0.1:5500/jumpy-sound-9573/images/Navbar%20logo.png" alt="logo">
+        <div id="payStatus">
+            <div>
+                <div class="statusBox" id="st1"></div>
+                <p>Traveler Details</p>
+            </div>
+
+            <div>
+                <div class="statusBox" id="st2"></div>
+                <p>Payment Details</p>
+            </div>
+
+            <div>
+                <div class="statusBox" id="st3"></div>
+                <p>Review Order</p>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <div id="main">
+        <p1><a href="">Back to Basket <i class="fa-solid fa-angle-left"></i></a>
+            <a href="">Traveller Details</a>
+        </p1>
+
+        <!--LR= left right div-->
+        <div id="LR">
+            <div id="left">
+                <h2>Payment Details</h2>
+                <p1><i class="fa-solid fa-lock"></i> This form is encrypted and your information is always guaranteed
+                    secure.</p1><br>
+
+                <div id="payPara">
+                    <div>
+                        <p>Credit Card</p>
+                    </div>
+                    <div>
+                        <img id="payImage"
+                            src="data:image/png;base64,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"
+                            alt="">
+                    </div>
+
+                </div>
+                <p>Cardholder Name <span class="redStar">*</span></p>
+                <input type="text" class="payInputBox">
+
+                <p>Credit/debit card number<span class="redStar">*</span></p>
+                <input type="text" class="payInputBox">
+
+                <p>Expiration date <span class="redStar">*</span></p>
+                <div id="expiryDiv">
+                    <div id="expiryMonth">
+                        <select name="" id="">
+                            <option value="">01-Jan</option>
+                            <option value="">02-Feb</option>
+                            <option value="">03-Mar</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                            <option value=""></option>
+                        </select>
+                    </div>
+
+                    <div id="expiryYear" class="expiryBox">
+                        <select name="" id="">
+                            <option value="">2022</option>
+                            <option value="">2023</option>
+                            <option value="">2024</option>
+                            <option value="">2025</option>
+                            <option value="">2026</option>
+                            <option value="">2027</option>
+                            <option value="">2028</option>
+                            <option value="">2029</option>
+                            <option value="">2030</option>
+                            <option value="">2031</option>
+                        </select>
+                    </div>
+
+                    <div id="cvv">
+                        <input type="text" id="cvvi" placeholder="cvv">
+                    </div>
+                </div>
+
+                <h2>Billing Address</h2>
+                <div>
+                    <select name="" id="">
+                        <option value="">india</option>
+                        <option value="">Georgia</option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+
+                    <input type="text" placeholder="Postal/Zip Code*">
+                </div>
+                <input type="checkbox">
+                <p1>Add this card to your account for future use <i class="fa-solid fa-circle-info"></i></p1>
+
+
+
+                <button id="next">Next</button>
+
+            </div>
+
+            <div id="right">
+                <div id="reviewDetail">
+                    <h2 id="rvPara">Review Order Details</h2>
+                    <!--ROD=revie order details-->
+                    <div id="ROD">
+                        <div id="ROD1">
+
+                        </div>
+                        <div id="ROD2">
+
+                        </div>
+                    </div>
+
+                    <div class="bookingFee">
+                        <div>
+                            <p1>Booking Fee <i class="fa-regular fa-circle-question"></i></p1>
+                        </div>
+                        <div>
+                            <p1>₹ 0.00</p1>
+                        </div>
+                    </div>
+                    <div class="bookingFee">
+                        <div>
+                            <p1>Subtotal:</p1>
+                        </div>
+                        <div>
+                            <p1>₹ 0.00</p1>
+                        </div>
+                    </div>
+                    <div class="bookingFee">
+                        <div>
+                            <p>Total:</p>
+                        </div>
+                        <div>
+                            <p id="totalPrice"></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--BWC= Book with confiedence div-->
+                <div id="BWC">
+                    <div>
+                        <h2>Book with confidence</h2>
+                        <hr>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-wallet"></i></div>
+                            <div>
+                                <p>Lowest price guarantee</p>
+                                <p1>Find it cheaper? We'll refund the difference</p1>
+                            </div>
+
+                        </div>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-lock"></i></div>
+                            <div>
+                                <p>Privacy protection</p>
+                                <p1>We use SSL encryption to keep your data secure</p1>
+                            </div>
+
+                        </div>
+                        <div class="lowestPrice">
+                            <div><i class="fa-sharp fa-solid fa-headphones"></i></div>
+                            <div>
+                                <p>24/7 global support</p>
+                                <p1>Get the answers you need, when you need them</p1>
+                            </div>
+
+                        </div>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <p>Give us a call</p>
+                                <p1>We’d be happy to help you out with your booking</p1><br>
+                                <p1><a href="">Call now: 000-0800-100-6999</a></p1>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p1>© 2022 TripAdvisor LLC All rights reserved. Tripadvisor Terms of Use and Privacy Policy.</p1>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="./scripts/paymentDetails.js"></script>
+<script src="./scripts/travelerDetails.js"></script>
+
+
+</html>
