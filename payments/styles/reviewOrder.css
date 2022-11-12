@@ -1,0 +1,26 @@
+#TD ,#PD{
+    display: flex;
+    justify-content: space-between;
+}
+
+#TP,#TC{
+    text-align: center;
+}
+#CB{
+    border: 0px;
+    background-color: rgb(231, 167, 48);
+    color: black;
+    margin-left: 5%;
+    margin-top: 5%;
+
+    width: 90%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 30px;
+
+    font-size: 18px;
+    font-weight: 300;
+}
+#statement{
+    text-align: center;
+}
