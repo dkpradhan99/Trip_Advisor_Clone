@@ -21,12 +21,12 @@ let dom = (data) => {
 
   //  cont2.innerHTML = null;
 
-  data.forEach((el) => {
+  data.forEach((el,i) => {
     let div = document.createElement("div");
     div.setAttribute("id", "hotel");
     div.style.brder = "1px solid red";
     div.onclick = () => {
-      something(el);
+      something(el,i);
     };
 
     let div1 = document.createElement("div");
@@ -81,9 +81,11 @@ dom(hotel_array);
 
 let d = JSON.parse(localStorage.getItem("Hotel-Details")) || [];
 
-let something = (el) => {
+let something = (el,i) => {
   d.push(el);
-  localStorage.setItem("Hotel-Details", JSON.stringify(d));
+  let x=hotel_array.splice(i,1)
+  console.log(x);
+  localStorage.setItem("Hotel-Details", JSON.stringify(x));
   window.location.href = "../availability/avail.html";
 };
 
