@@ -115,6 +115,7 @@ p{
 #left{
     width: 60%;
     border: 0px solid black;
+    height: auto;
 }
 #right{
     width: 35%;

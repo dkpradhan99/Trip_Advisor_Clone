@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/290605cd52.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/travelerDetails.css">
     <link rel="stylesheet" href="./styles/paymentDetails.css">
     <link rel="stylesheet" href="./styles/reviewOrder.css">
 </head>
+
 <body>
     <div id="navbar">
         <img id="logo" src="http://127.0.0.1:5500/jumpy-sound-9573/images/Navbar%20logo.png" alt="logo">
@@ -31,9 +34,168 @@
         </div>
     </div>
     <hr>
-    
+
+    <div id="main">
+        <p1><a href="">Back to Basket <i class="fa-solid fa-angle-left"></i> </a>
+            <a href="">Traveller Details<i class="fa-solid fa-angle-left"></i></a>
+            <a href=""> Payment Details</a>
+        </p1>
+
+
+        <!--LR= left right div-->
+        <div id="LR">
+            <div id="left">
+                <hr>
+                <!--TD= traveler details-->
+                <div id="TD">
+                    <div>
+                        <h2>Traveller Details</h2>
+                    </div>
+                    <div><i class="fa-solid fa-pencil"></i><a id="TD2" href="">Edit</a></div>
+                </div>
+                <h3>Tour: Ubud Tour - Best of Ubud - All Inclusive</h3>
+                <p>Lead Traveller</p>
+                <p1>peter decinroth</p1>
+                <p1>pk@g.com</p1><br>
+                <p1>9867543218</p1>
+                <hr>
+
+                <!--PD= payment details-->
+                <div id="PD">
+                    <div>
+                        <h2>Payment Details</h2>
+                    </div>
+                    <div><i class="fa-solid fa-pencil"></i><a id="TD2" href="">Edit</a></div>
+                </div>
+                <p1>Payment using Credit Card</p1>
+                <hr>
+                <!--TP= total price-->
+                <div id="TP">
+                    <h2>Total Price: ₹14,876.06</h2>
+                    <p1><i class="fa-solid fa-circle-xmark"></i>Non-refundable</p1>
+                </div>
+                <p1>
+                    Your booking is facilitated by Viator,
+                    Inc. (part of the Tripadvisor group) but a third party tour operator provides
+                    the tour/activity directly to you. By clicking "Complete Booking", you acknowledge
+                    that you have read and are bound by Tripadvisor's Terms and Conditions & Privacy Policy;
+                    Viator's Terms and Conditions; plus the tour operator's rules & regulations
+                    (see the listing for more details), and that you agree that you will be sent
+                    special offers, inspiration, tips and other updates from Tripadvisor from which
+                    you can unsubscribe at any time. You also agree
+                    to Tripadvisor storing your credit card details with your account when
+                    the option is checked.
+                </p1>
+                <div id="TC">
+                    <p1>Clicking on "Complete Booking" finalizes your order</p1>
+                </div>
+
+
+                <button id="CB">Complete Booking</button>
+                <div id="statement">
+                    <p1>Your statement will list Viator/Tripadvisor as the merchant for this transaction</p1>
+                </div>
+
+            </div>
+
+            <div id="right">
+                <div id="reviewDetail">
+                    <h2 id="rvPara">Review Order Details</h2>
+                    <!--ROD=revie order details-->
+                    <div id="ROD">
+                        <div id="ROD1">
+
+                        </div>
+                        <div id="ROD2">
+
+                        </div>
+                    </div>
+
+                    <div class="bookingFee">
+                        <div>
+                            <p1>Booking Fee <i class="fa-regular fa-circle-question"></i></p1>
+                        </div>
+                        <div>
+                            <p1>₹ 0.00</p1>
+                        </div>
+                    </div>
+                    <div class="bookingFee">
+                        <div>
+                            <p1>Subtotal:</p1>
+                        </div>
+                        <div>
+                            <p1>₹ 0.00</p1>
+                        </div>
+                    </div>
+                    <div class="bookingFee">
+                        <div>
+                            <p>Total:</p>
+                        </div>
+                        <div>
+                            <p id="totalPrice"></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!--BWC= Book with confiedence div-->
+                <div id="BWC">
+                    <div>
+                        <h2>Book with confidence</h2>
+                        <hr>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-wallet"></i></div>
+                            <div>
+                                <p>Lowest price guarantee</p>
+                                <p1>Find it cheaper? We'll refund the difference</p1>
+                            </div>
+
+                        </div>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-lock"></i></div>
+                            <div>
+                                <p>Privacy protection</p>
+                                <p1>We use SSL encryption to keep your data secure</p1>
+                            </div>
+
+                        </div>
+                        <div class="lowestPrice">
+                            <div><i class="fa-sharp fa-solid fa-headphones"></i></div>
+                            <div>
+                                <p>24/7 global support</p>
+                                <p1>Get the answers you need, when you need them</p1>
+                            </div>
+
+                        </div>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <p>Give us a call</p>
+                                <p1>We’d be happy to help you out with your booking</p1><br>
+                                <p1><a href="">Call now: 000-0800-100-6999</a></p1>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p1>© 2022 TripAdvisor LLC All rights reserved. Tripadvisor Terms of Use and Privacy Policy.</p1>
+
+        </div>
+
+    </div>
+
 </body>
 <script src="./scripts/reviewOrder.js"></script>
 <script src="./scripts/paymentDetails.js"></script>
 <script src="./scripts/travelerDetails.js"></script>
+
 </html>
