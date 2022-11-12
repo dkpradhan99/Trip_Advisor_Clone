@@ -18,10 +18,16 @@ title.innerText=Data.Title;
 title.setAttribute("id","title")
 
 let price=document.createElement("p");
-price.innerText=`Price : ₹${Data.Price} /Night`;
+price.innerText=`Price : ₹${Data.Price} /Person`;
 ROD2.append(title,price);
 
 //updating total price value
 let totalPrice=document.getElementById("totalPrice");
 totalPrice.innerText=`₹${Data.Price.toFixed(2)}`
 
+//applying onclickon next button
+let next=document.getElementById("next");
+next.addEventListener("click",function(){
+    //alert(0)
+    window.location.href="paymentDetails.html"
+})
