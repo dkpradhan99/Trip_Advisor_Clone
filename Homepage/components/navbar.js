@@ -9,7 +9,7 @@ const navbar = () => {
       <a href="#"><i class="fa-solid fa-pencil"></i>Review</a>
       <a href="#"><i class="fa-regular fa-heart"></i>Trips</a>
       <a href="#"><i class="fa-regular fa-bell"></i>Alerts</a>
-      <a href="#" id="sign-in">Sign in</a>
+      <a href="../SignUp/signin.html" id="sign-in">Sign in</a>
       <a href="#"><i class="fa-solid fa-cart-shopping"></i>Baskets</a>
     </div>
   </div>`;
