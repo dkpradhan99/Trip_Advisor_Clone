@@ -7,7 +7,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 3700,
-    Ac: true,
+    Ac: "Available",
     Rating: 3.8,
   },
   {
@@ -18,7 +18,7 @@ const hotels = [
     },
     Rooms: 50,
     Price: 1500,
-    Ac: false,
+    Ac: "Not-Aavailable",
     Rating: 4.1,
   },
   {
@@ -29,7 +29,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 2800,
-    Ac: true,
+    Ac: "Available",
     Rating: 4,
   },
   {
@@ -40,7 +40,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 2400,
-    Ac: true,
+    Ac:"Available",
     Rating: 4,
   },
   {
@@ -51,7 +51,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 2250,
-    Ac: false,
+    Ac: "Not-Aavailable",
     Rating: 4.5,
   },
   {
@@ -62,7 +62,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 1000,
-    Ac: false,
+    Ac:  "Not-Aavailable",
     Rating: 3.9,
   },
   {
@@ -73,7 +73,7 @@ const hotels = [
     },
     Rooms: 20,
     Price: 3200,
-    Ac: false,
+    Ac:  "Not-Aavailable",
     Rating: 3.5,
   },
   {
@@ -84,7 +84,7 @@ const hotels = [
     },
     Rooms: 20,
     Price: 2100,
-    Ac: true,
+    Ac:"Available",
     Rating: 3.9,
   },
   {
@@ -95,7 +95,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 3200,
-    Ac: true,
+    Ac: "Available",
     Rating: 4,
   },
   {
@@ -106,7 +106,7 @@ const hotels = [
     },
     Rooms: 20,
     Price: 3000,
-    Ac: true,
+    Ac: "Available",
     Rating: 4.1,
   },
   {
@@ -117,7 +117,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 3700,
-    Ac: true,
+    Ac: "Available",
     Rating: 3.8,
   },
   {
@@ -128,7 +128,7 @@ const hotels = [
     },
     Rooms: 50,
     Price: 1200,
-    Ac: false,
+    Ac:  "Not-Aavailable",
     Rating: 4.5,
   },
   {
@@ -139,7 +139,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 2800,
-    Ac: true,
+    Ac:"Available",
     Rating: 4,
   },
   {
@@ -150,7 +150,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 1600,
-    Ac: false,
+    Ac: "Not-Aavailable",
     Rating: 4.3,
   },
   {
@@ -161,7 +161,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 1800,
-    Ac: false,
+    Ac: "Not-Aavailable",
     Rating: 4,
   },
   {
@@ -172,7 +172,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 1200,
-    Ac: false,
+    Ac:  "Not-Aavailable",
     Rating: 4.5,
   },
   {
@@ -183,7 +183,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 1500,
-    Ac: true,
+    Ac: "Available",
     Rating: 4.1,
   },
   {
@@ -194,7 +194,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 1200,
-    Ac: true,
+    Ac: "Available",
     Rating: 4.2,
   },
   {
@@ -205,7 +205,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 1000,
-    Ac: true,
+    Ac: "Available",
     Rating: 3.9,
   },
   {
@@ -216,7 +216,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 1900,
-    Ac: false,
+    Ac:  "Not-Aavailable",
     Rating: 4,
   },
   {
@@ -227,7 +227,7 @@ const hotels = [
     },
     Rooms: 19,
     Price: 800,
-    Ac: false,
+    Ac:  "Not-Aavailable",
     Rating: 3.8,
   },
 ];

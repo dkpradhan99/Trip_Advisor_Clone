@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        @import url(./font/font.css);
+        body{
+            font-family: 'PT Root UI Light';
+        }
+        #sign{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            height: 700px;
+            width: 35%;
+            margin: auto;
+        
+        }
+        #logo{
+            margin-top: 50px;
+            margin-left: 30%;
+        }
+        form{
+            display: grid;
+            grid-template-rows: repeat(5,40px);
+            grid-template-columns: repeat(1,300px);
+            grid-gap: 2px;
+            padding-left: 80px;
+            margin-top: -30px;
+           
+        }
+        #upper{
+          
+            height: 30%;
+            width: 100%;
+            
+           
+        }
+        #lower{
+            
+            height: 60%;
+            width: 130%;
+            margin-top:40px;
+        }
+        input{
+            border-radius: 7px;
+            padding: 2px;
+            width:110%;
+            border-color: rgb(231, 216, 216);
+        }
+        
+        .inputlog{
+            background-color: rgb(1, 1, 15);
+            color: white;
+            margin-top: 10px;
+            width:110%;
+            border-width: 0px;
+            height: 40px;
+            border-radius: 10px;
+        }
+       
+        .sitelogin:hover{
+            background-color: rgb(230, 217, 217);
+        }
+        .siteloginpic{
+            height:70%;
+            padding-left: 80px;
+            padding-top: 5px;
+        }
+        
+        .sitelogin>div>p{
+           margin-top: 0px;
+           font-size: 18px;
+        }
+        #logsign{
+            
+            height:15px;
+            width:100%;
+            margin-top: 20px;
+            text-decoration: underline;
+            
+        }
+        #last{
+            display: flex;
+            justify-content:space-between;
+            padding-left: 10px;
+            color: blue;
+            width:100%;
+        }
+        .line:hover{
+            border-color: rgb(161, 161, 228);
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sign">
+        <div id="upper">
+            <img id="logo" src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg" alt="">
+
+        <h1 style="text-align:center">Wellcome back</h1>
+        </div>
+        <div id="lower">
+            <form>
+           
+           
+            
+                <h4 style="color:darkgray">Email</h4>
+                
+                <input id="email" class="line" type="text" placeholder="joinsmith@mail.com"/>
+                <h4 style="color:darkgray">Password</h4>
+                <input id="pass" class="line" type="password" placeholder="Enter Your Password"/>
+           
+                
+                    <div id="logsign"><h4 style=" margin-top: 0px;"onclick="window.location.href='forgot.html'"" >Forgot Password?</h6></div>
+                
+                
+                
+                <input class="inputlog" type="submit" value="Signin"/>
+
+
+                <h4>--------------------Not a Member?----------------</h4>
+
+                <div id="logsign"><h4 style=" margin-top: 0px;"onclick="window.location.href='signup.html'"" >Join to unlock the best of Tripadvisor.</h6></div>
+                
+                
+            </form>
+
+        </div>
+        <hr>
+        
+        
+    </div>
+    <p style="text-align:center;color:blue">Privacy Policy </p>
+    
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit", signin);
+    var regdUsers=JSON.parse(localStorage.getItem("userDataBase"));
+    
+    function signin(event){
+        event.preventDefault();
+        var email=document.querySelector("#email").value;
+        var pass=document.querySelector("#pass").value;
+        let x=some( email,pass)
+        if(x==true){
+            alert("user sign in successful")
+            window.location.href="index.html"
+        }
+        else{
+            alert("incorect user name & password")
+        }
+        
+      
+    }
+    function some(email,pass){
+        for(var i=0; i<regdUsers.length;i++) {
+            console.log(regdUsers[i].passwd);
+            if(regdUsers[i].emailAdd == email && regdUsers[i].passwd ==pass){
+                return true;
+
+            } 
+           
+           
+           
+        }
+        return false;
+    }
+</script>

@@ -124,8 +124,9 @@ iframe {
   height: 200px;
   margin-top: 10px;
   border:0px solid red;
- 
+  cursor: pointer;
 }
+
 #static img:hover{
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -213,152 +214,99 @@ iframe {
   padding:1px;
   font-size: small;
 }
-/* label{
-  font-size: large;
-  font-weight: bolder;
-}
-.item h3 .dropdown{
-  position: absolute;
-  right: 0;
-  transition: 0.3s ease;
-}
-.item{
-  width: auto;
-  padding: 18px;
-  border-radius: 10px;
-  position: relative;
-  margin-top: 0;
-  background-color:#fff ;
-}
 
-.item i{
-  margin-right: 15px;
-} */
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-
-.dd-button {
-  display: inline-block;
-  border: 1px solid gray;
-  border-radius: 4px;
-  padding: 10px 30px 10px 20px;
-  background-color: #ffffff;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.dd-button:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  width: 0; 
-  height: 0; 
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid black;
-}
-
-.dd-button:hover {
-  background-color: #eeeeee;
-}
-
-
-.dd-input {
-  display: none;
-}
-
-.dd-menu {
-  position: absolute;
-  top: 100%;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 0;
-  margin: 2px 0 0 0;
-  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
-  background-color: #ffffff;
-  list-style-type: none;
-}
-
-.dd-input + .dd-menu {
-  display: none;
-} 
-
-.dd-input:checked + .dd-menu {
-  display: block;
-} 
-
-.dd-menu li {
-  padding: 10px 20px;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
-.dd-menu li:hover {
-  background-color: #f6f6f6;
-}
-
-.dd-menu li a {
-  display: block;
-  margin: -10px -20px;
-  padding: 10px 20px;
-}
-
-.dd-menu li.divider{
-  padding: 0;
-  border-bottom: 1px solid #cccccc;
-}
 #sort_btn button{
- width:100%;
+ width:97%;
  border:none;
  padding:5px;
  text-align: left;
- margin-top: 20px;
+ margin-top: 5px;
+ cursor: pointer;
+ font-size: 16px;
+ font-family: inherit;
+ background-color: white;
 
 }
 #sort_btn{
-  margin-top: 20px;
+  margin-top: 30px;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  height: 150px;
+  /* height: 150px; */
+  
 }
 #sort_btn button:hover{
   box-shadow: rgba(152, 182, 232, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   background-color: rgb(202, 222, 238);
 }
 #sort_cc{
-  margin-top: 20px;
+  margin-top: 30px;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  height: 150px;
+  /* height: 150px; */
 }
 #sort_cc button{
-  width:100%;
+  width:97%;
   border:none;
   padding:5px;
   text-align: left;
-  margin-top: 20px;
- 
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 16px;
+ font-family: inherit;
+ background-color: white;
  }
  #sort_cc  button:hover{
   background-color: rgb(202, 222, 238);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 #rate{
-  margin-top: 20px;
+  margin-top: 30px;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  height: 150px;
+  /* height: 150px; */
 }
 #rate  button{
-  width:100%;
+  width:97%;
   border:none;
   padding:8px;
   text-align: left;
-  margin-top: 20px;
- 
+  margin-top: 5px;
+ cursor: pointer;
+ font-size: 16px;
+ font-family: inherit;
+ background-color: white;
  }
  #rate  button:hover{
   background-color: rgb(202, 222, 238);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#left h3{
+  margin-left: 20px;
+  font-size: inherit;
+}
+#left button{
+  margin-left: 10px;
+}
+#left i{
+  margin-right: 10px;
+}
+#covid{
+  margin-top: 20px;
+  margin-left: 8px;
+
+}
+#covid input{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#covid img{
+  margin-left: 40px;
+}
+#deals{
+  margin-top: 26px;
+  margin-left: 8px;
+
+}
+#deals input{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+ font-family: inherit;
 }

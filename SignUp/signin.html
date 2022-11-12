@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup
+    </title>
+    <style>
+         @import url(./font/font.css);
+        body{
+            font-family: 'PT Root UI Light';
+        }
+        #main{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            height: 650px;
+            width: 40%;
+            margin:auto;
+            display: flex;
+        }
+        #sign{
+           
+            height: 100%;
+            width: 100%;
+        
+        }
+        #pic{
+          
+            height: 100%;
+            width: 50%;
+        
+        }
+        form{
+            display: block;
+            /* grid-template-rows: repeat(5,40px);
+            grid-template-columns: repeat(1,300px); */
+            /* grid-gap: 2px; */
+            padding-left: 80px;
+            /* margin-top: -30px; */
+           
+        }
+        
+        input{
+            border-radius: 10px;
+            padding: 7px;
+            width: 75%;
+            border-width:0.5px;
+            border-color: rgb(231, 216, 216);
+            border-width: 1px;
+        }
+        .inputlog{
+            background-color: blue;
+            color: white;
+            width:80%;
+           
+        }
+        h1{
+            text-align: center;
+        }
+        #logo{
+            margin-left: 30%;
+            margin-top: 20px;
+        }
+        #banner{
+            background-color: #f2f5fc;
+            height: 100%;
+            width: 100%;
+        }
+        h4{
+           margin-bottom: 1px;
+           color: rgb(187, 179, 179);
+        }
+        #checkbox{
+            width:15%;
+            border-width: 5px;
+            border-color: black;
+        }
+        span:hover{
+           
+            text-decoration: underline;
+
+        }
+        span{
+            color:blue
+        }
+        .last{
+            margin-top: 5px;
+        }
+        p{
+            
+            margin-top: 100px;
+        }
+        #lastline{
+            font-size: 14px;
+        }
+        .sitelogin{
+            border:1px solid rgb(231, 216, 216);
+            width:80%;
+            height:32px;
+            border-radius: 5px;
+            text-align:center;
+            display:flex;
+           margin-top: 5px;
+        }
+        .sitelogin:hover{
+            background-color: rgb(228, 220, 220);
+        }
+        .siteloginpic{
+            height:70%;
+            padding-left: 80px;
+            padding-top: 5px;
+        }
+        .sitelogin>div{
+            height:80%;
+            weight:60%;
+           
+            margin:auto;
+        }
+        .sitelogin>div>p{
+           margin-top: 0px;
+           font-size: 18px;
+        }
+        .line:hover{
+            border-color: rgb(161, 161, 228);
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="sign">
+            <img id="logo" src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg" alt="">
+
+            <h1>Sign in to unlock the <br/> best of Tripadvisor.</h1>
+
+            
+        
+            <form>
+                
+                
+                <div class="sitelogin"> 
+                    <img class="siteloginpic" src="https://id.tmetric.com/images/google_logo.svg" alt=""> 
+                    <div onclick="window.location.href='home.html'""> <p>Continue with Google</p> </div>
+                </div>
+                <div class="sitelogin"> 
+                    <img class="siteloginpic" src="data:image/png;base64,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" alt=""> 
+                    <div onclick="window.location.href='https://youtube.com/c/SSirScienceTeacher'""> <p>Continue with Facebook</p> </div>
+                </div>
+                <div class="sitelogin"> 
+                    <img class="siteloginpic" src="https://cdn4.iconfinder.com/data/icons/aiga-symbol-signs/439/aiga_mail-512.png" alt=""> 
+                    <div onclick="window.location.href='login.html'""> <p>Continue with Email</p> </div>
+                </div>
+
+                <br/><br/><br/><br/><br/><br/>
+               
+
+                <p id="lastline">By proceeding, you agree to our Terms of Use and confirm you have read our Privacy and Cookie Statement.
+                     <br/><br/>This site is protected by re CAPTCHA and the Google Privacy Policy and Terms of Service apply</p>
+            
+            </form>
+            
+            
+        
+    </div>
+
+</body>
+</html>
+<script>
+    
+</script>
