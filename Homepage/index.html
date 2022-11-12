@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="../Homepage/styles/slider.css" />
+    <link rel="stylesheet" href="../Homepage/styles/slider2.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -48,34 +49,20 @@
     <!-- Main-content -->
 
     <div id="containers">
+      <!-- categories -->
       <div id="categories">
-        <div>
-          <a href="#">Hotels </a>
-          <i class="fa-solid fa-bed"></i>
-        </div>
-        <div>
-          <a href="#">Holiday Homes </a>
-          <i class="fa-solid fa-house-chimney"></i>
-        </div>
-        <div>
-          <a href="#">Things to Do </a>
-          <i class="fa-sharp fa-solid fa-arrows-to-dotted-line"></i>
-        </div>
-        <div>
-          <a href="#">Restaurants </a>
-          <i class="fa-solid fa-utensils-slash"></i>
-        </div>
-        <div>
-          <a href="#">Travel Stories </a>
-          <i class="fa-solid fa-globe"></i>
-        </div>
-        <div>
-          <a href="#">More </a>
-          <i class="fa-solid fa-circle-ellipsis-vertical"></i>
-        </div>
+        <a href="../hotels/hotels123.html"
+          >Hotels <i class="fa-solid fa-bed"></i
+        ></a>
+        <a href="#">Holiday Homes <i class="fa-solid fa-house-chimney"></i></a>
+        <a href="#">Things to Do <i class="fa-solid fa-calendar-week"></i></a>
+        <a href="#">Restaurants <i class="fa-solid fa-shop"></i></a>
+        <a href="#">Travel Stories <i class="fa-solid fa-globe"></i></a>
+        <a href="#">More <i class="fa-solid fa-list"></i></a>
       </div>
     </div>
 
+    <!-- search-section -->
     <div id="search-section">
       <img
         src="https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans.webp"
@@ -84,6 +71,18 @@
       <input id="search-bar" type="text" placeholder="Search" />
     </div>
 
+    <!-- Top-Exp -->
+    <div id="Top-Exp">
+      <h4>Top experiences on Tripadvisor</h4>
+      <p>The best tours, activities and tickets</p>
+      <div class="exp-container swiper mySwiper">
+        <div class="exp-wrapper swiper-wrapper"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+
+    <!-- get-out-there -->
     <div id="get-out-there">
       <div>
         <h4>Get out there</h4>
@@ -171,8 +170,10 @@
 
     <!-- Footer -->
     <div id="main-footer"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="./scripts/main.js"></script>
     <script src="../Homepage/scripts/slider.js"></script>
+    <script src="../Homepage/scripts/slider2.js"></script>
   </body>
 </html>
