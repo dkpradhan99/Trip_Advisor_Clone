@@ -57,6 +57,7 @@ function click(){
         arr.push(el)
     alert("product added to basket")
     localStorage.setItem("bag",JSON.stringify(arr))
+ 
 }
 });
 }
