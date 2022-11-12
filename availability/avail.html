@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Homepage/index.css">
     <link rel="stylesheet" href="./avail.css">
+    <link rel="stylesheet" href="./slider1.css">
+    <link rel="stylesheet" href="../Homepage/styles/swiper-bundle.min.css">
     <script
     src="https://kit.fontawesome.com/24c494a6b6.js"
     crossorigin="anonymous"
@@ -46,7 +48,8 @@
         #mid{
             display:grid;
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: 2000px;
+            grid-template-rows: 1100px;
+            /* z-index: 500; */
             /* border:1px solid red; */
             width:80%;
             margin:auto;
@@ -98,8 +101,8 @@
             height:50px;
             border-radius: 25px;
             background-color: rgba(242,178,3,255);
-            font-weight: bold;
-            font-size: 16px;
+            font-weight: 500;
+            font-size: 17.5px;
             border:none;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             cursor: pointer;
@@ -185,6 +188,48 @@
             height:auto;
 
         }
+        #gap{
+            line-height: 200%;
+        }
+        
+        #box32{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 230px;
+            gap:10px;
+            width:80%;
+            margin:auto;
+            border:1px solid rgb(204, 199, 199);
+            padding:10px;
+            border-radius: 5px;
+        }
+        #box32>div{
+            border:0.5px solid grey;
+            padding:10px;
+            border-radius: 5px;
+        }
+        #box32>div>img{
+            width:20%;
+            border-radius: 50px;
+            margin-bottom: 15px;;
+            
+        }
+        #box32>div>p{
+            color: grey;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 20px;
+            margin-bottom:8px;;
+        }
+        #box32>div>h3{
+            text-decoration: underline;
+            cursor: pointer;
+            /* margin-top: 20px; */
+        }
+        #h1{
+            margin-left: 145px;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
 
     </style>
  
@@ -229,15 +274,18 @@
                 <p>from</p>
                 <div id="butto">
                     
-                    <button>Check availability</button>
+                    <button id="add21">Add to Basket</button>
                 </div>
                 <p id="up">per adult (price varies by group size)</p>
                 <p>Lowest price guarantee • Free cancellation</p>
-                <p>&#128345 Ages 0-99</p>
-                <p>&#128345 Duration:4 days</p>
-                <p>&#128345 Start time: Check availability</p>
-                <p>&#128345 Ticket type:Mobile</p>
-                <p>&#128345 German, Russian, English, French, Spanish</p>
+                <div id="gap">
+                    <p>🙅 Ages 0-99</p>
+                    <p>⏳ Duration:4 days</p>
+                    <p>&#128345 Start time: Check availability</p>
+                    <p>📱 Ticket type:Mobile</p>
+                    <p>🌐 German, Russian, English, French, Spanish</p>
+                </div>
+                
                 <nav class="navigation">
                     <ul class="mainmenu">
                       <!-- <li><a href="">Home</a></li> -->
@@ -295,8 +343,50 @@
                     </ul>
                   </nav>
             </div>
+         
         </div>
+        <div id="h1">
+            <h2>About the operator</h1>
+        </div>
+        
+        <div id="box32">
+            <!-- <p>kbdfbhdhbhb</p> -->
+           <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/f2/b8/default-avatar-2020-26.jpg?w=100&h=100&s=1" alt="">
+            <h4>Culture immersion</h3>
+            <p>I loved seeing the Ganges river and the city of Benarés, it is a very different culture and veey interesing</p>
+            <h3>Read more</h2>
+           </div>
+           <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/77/ae/default-avatar-2020-2.jpg?w=100&h=100&s=1" alt="">
+            <h4>Varanasi Excursion</h4>
+            <p>The road boat through the Ganges was amazing. The guide was very nice and expl…</p>
+            <h3>Read more</h2>
+           </div>
+           <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e8/91/default-avatar-2020-62.jpg?w=100&h=100&s=1" alt="">
+            <h4>Varanasi a city to feel</h4>
+            <p>Varanasi is not a city to see, is a city to feel, thousands of years of history and mysticism everywhere you go. Th…</p>
+            <h3>Read more</h2>
+           </div>
+           <div>
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/f6/e8/91/default-avatar-2020-62.jpg?w=100&h=100&s=1" alt="">
+            <h4>Best tour till now</h4>
+            <p>We booked our Varanasi excursion tour and trip advisor reviews and we are so glad we did. His c…</p>
+            <h3>Read more</h2>
+           </div>
 
+        </div>
+        <!-- slider1 -->
+        <div id="Scenic-spots">
+            <h2>More to explore in Varanasi
+            </h4>
+            <div class="sliding-container swiper mySwiper">
+              <div class="card_wrapper swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
     </div>
     <div id="main-footer"></div>
   
@@ -304,3 +394,22 @@
 </html>
 <script src="./avail.js"></script>
 <script src="../Homepage/scripts/main.js" type="module"></script>
+<script src="./slider1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+      var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    slidesPerGroup: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

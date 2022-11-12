@@ -6,7 +6,8 @@ html, body {
 .navigation {
   width: 600px;
   margin-top: 30px;;
-  /* height: 1000px; */
+  height: 1000px;
+  
 }
 
 /* reset our lists to remove bullet points and padding */
@@ -14,6 +15,7 @@ html, body {
   list-style: none;
   padding: 0;
   margin: 0;
+  /* z-index: 1; */
 }
 
 /* make ALL links (main and submenu) have padding and background color */
@@ -24,12 +26,14 @@ html, body {
   padding: 10px;
   color: #000;
   text-decoration: underline;
-  font-size:17px
+  font-size:17px;
+  /* z-index: 1; */
 }
 
 /* add hover behaviour */
 .mainmenu a:hover {
     background-color: #C5C5C5;
+    z-index: 1;
 }
 
 
