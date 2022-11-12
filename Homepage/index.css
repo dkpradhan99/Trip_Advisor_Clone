@@ -107,7 +107,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-#categories > div {
+#categories > a {
   border: 1px solid;
   border-radius: 10px;
   font-weight: 600;
@@ -117,18 +117,26 @@ body {
   height: 45px;
   justify-content: space-around;
   align-items: center;
+  color: #000;
+  text-decoration: none;
 }
-#categories div:hover {
+/* #categories div:hover {
   background-color: #000;
   color: #fff;
-}
-#categories > div > a {
+} */
+/* #categories > a {
   text-decoration: none;
   padding: 0 0 0 5px;
   color: #000;
-}
+} */
+/* #categories > div > a {
+  text-decoration: none;
+  padding: 0 0 0 5px;
+  color: #000;
+} */
 #categories a:hover {
   color: #fff;
+  background-color: #000;
 }
 
 #search-section {
@@ -369,6 +377,14 @@ select {
   border-radius: 10px;
   /* border: 2px solid; */
   font-size: 18px !important;
+}
+option {
+  min-width: 165px;
+  padding: 0;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  border-radius: 10px;
 }
 .social-links {
   /* border: 1px solid; */
