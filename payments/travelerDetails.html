@@ -8,6 +8,7 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/290605cd52.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/travelerDetails.css">
+    <link rel="stylesheet" href="./styles/LR.css">
 </head>
 
 <body>
@@ -38,50 +39,80 @@
         <div id="para1">
             <p>Checkout securely - it takes only a few minutes. </p>
         </div>
-        <h2>Contact Details</h2>
+        <!--LR= left right div-->
+        <div id="LR">
+            <div id="left">
+                <h2>Contact Details</h2>
+                <div id="contact">
+                    <div>
+                        <p>Email<span class="redStar">*</span></p>
+                        <input class="boxSize" type="text">
+                    </div>
+        
+                    <div>
+                        <p>Phone Number<span class="redStar">*</span></p>
+        
+                        <select name="" id="sel1" class="boxSize">
+                            <option value="+91">+91</option>
+                            <option value="">+92</option>
+                        </select>
+                        <input class="boxSize" type="text">
+                    </div>
+        
+                </div>
+                <input type="checkbox"><span>Receive text message updates about your booking. Message rates may apply.</span>
+                <h2>Traveler Details</h2>
+                <p>Lead Traveler</p>
+        
+                <!--tdinput = travelerdetails input box -->
+                <div id="tdinput">
+                    <div>
+                        <p>First name<span class="redStar">*</span></p>
+                        <input type="text" class="boxSize">
+        
+                    </div>
+                    <div>
+                        <p>Last name<span class="redStar">*</span></p>
+                        <input type="text" class="boxSize">
+        
+                    </div>
+                </div>
+        
+        
+                <h2>Promo Code</h2>
+                <hr>
+                <a href="">Enter Promo Code</a><br>
+                <button id="next">Next</button>
+        
+            </div>
 
-        <div class="contact">
-            <div>
-                <p>Email<span class="redStar">*</span></p>
-                <input class="boxSize" type="text">
+            <div id="right">
+                <div id="reviewDetail">
+                    
+                </div>
+                <!--BWC= Book with confiedence div-->
+                <div id="BWC">
+                    <h2>Book with confidence</h2>
+                    <hr>
+
+                    <div class="BWC_card">
+                        <div class="BWC_card_left">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="BWC_card_right">
+                            <p>Lowest price guarantee</p>
+                            <p1>Find it cheaper? We'll refund the difference</p1>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div>
+        </div>
 
-                <p>Phone Number<span class="redStar">*</span></p>
-
-                <select name="" id="" class="boxSize">
-                    <option value="+91">+91</option>
-                    <option value="">+92</option>
-                </select>
-                <input class="boxSize" type="text">
-
-
-
-            </div>
+        <div id="copyright">
+            <p1>© 2022 TripAdvisor LLC All rights reserved. Tripadvisor Terms of Use and Privacy Policy.</p1>
 
         </div>
-        <input type="checkbox"><span>Receive text message updates about your booking. Message rates may apply.</span>
-        <h2>Traveler Details</h2>
-        <p>Lead Traveler</p>
-        <div class="contact">
-            <div>
-                <p>First Name<span class="redStar">*</span></p>
-                <input class="boxSize" type="text">
-            </div>
-            <div>
-                <p>Last Name<span class="redStar">*</span></p>
-                <input class="boxSize" type="text">
-            </div>
-
-        </div>
-
-        <h2>Promo Code</h2>
-        <hr>
-        <a href="">Enter Promo Code</a><br>
-        <button id="next">Next</button>
-
-
 
     </div>
 
