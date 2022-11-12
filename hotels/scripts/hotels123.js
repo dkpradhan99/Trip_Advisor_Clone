@@ -53,19 +53,14 @@ let dom = (data) => {
     price.style.color = "blue";
 
     let AC = document.createElement("p");
-    AC.innerText = `Ac -  ${el.Ac}`;
+    AC.innerText = `Ac :  ${el.Ac}`;
     AC.style.marginTop = "5px";
 
     let rating = document.createElement("p");
     rating.innerText = `⭐ ${el.Rating}`;
     rating.style.marginTop = "5px";
 
-    // detail.append(title, rooms, price, AC, rating);
-    //  hotelImage.append(image);
 
-    // hotdata.append( hotelImage,detail);
-    // // hotdata.append(div)
-    // cont2.append(hotdata)
     div1.append(image);
     hotelImage.append(div1);
 
@@ -90,42 +85,6 @@ let something = (el,i) => {
 };
 
 //---------------------sort by price------------------
-// let data=JSON.parse(localStorage.getItem("data")) || [];
-// let somefun=()=>{
-//   data.sort((a,b)=>a.Price - b.Price )
-//   dom()
-// }
-// //somefunction()
-// let L=document.getElementById("L");
-// L.onchange=()=>{
-//   data.sort((a,b)=>a.Price - b.Price )
-//   dom()
-// }
-// let data=JSON.parse(localStorage.getItem("data")) || [];
-// let hightolow_p=document.getElementById('sub-item2');
-// let data=JSON.parse(localStorage.getItem("data")) || [];
-// hightolow_p.addEventListener("click", ()=>{
-//     hlrating(data);
-// });
-// const hlrating=(data)=>{
-//  let sortdata= data.sort(function(a,b){
-//     // console.log(typeof (b.price));
-//      return b.el.Price - a.el.Price
-//    });
-//  dom(sortdata);
-// }
-
-// //sort low to high
-// let lowtohigh_p=document.getElementById('sub-item3');
-// lowtohigh_p.addEventListener("click", ()=>{
-// lhrating(data)
-// });
-// const lhrating=(data)=>{
-// let sortdata= data.sort(function(a,b){
-//     return a.price - b.price ;
-//   });
-// append(sortdata);
-// }
 
 let sort_lth = document.getElementById("sort_lth");
 
@@ -142,52 +101,24 @@ sort_lth.onclick = () => {
 let sort_htl = document.getElementById("sort_htl");
 sort_htl.onclick = () => {
   var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
-  //console.log(typeof Price)
 
   hotel_array.sort((a, b) => b.Price - a.Price);
 
   localStorage.setItem("data", JSON.stringify(hotel_array));
   dom(hotel_array);
 };
-// function sortLtoH(){
-//   let userData =JSON.parse(localStorage.getItem("sh"))
-
-//   userData.sort((a,b)=>
-
-//   a.Price - b.Price
-
-//   )
-//   localStorage.setItem("sh",JSON.stringify(userData))
-//   renderDom(userData)
-
-//   }
-
-// function sortHtoL(){
-//     let userData =JSON.parse(localStorage.getItem("sh"))
-
-//     userData.sort((a,b)=>
-
-//    b.Price - a.Price
-
-//     )
-//     localStorage.setItem("sh",JSON.stringify(userData))
-//     renderDom(userData)
-
-//     }
 
 //---------------------------------Ac filter-------------------------------
-// let cont2 = document.getElementById("c2");
-// cont2.innerHTML = null;
+
 document.getElementById("filter_ac").addEventListener("click", ac_filt);
 
 function ac_filt() {
-  //console.log("abha")
+
   var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
   let f1 = hotel_array.filter(function (el) {
-    return el.Ac == true;
+    return el.Ac == "Available";
   });
-  // dom(f1)
-  // localStorage.setItem("data", JSON.stringify(f1));
+ 
   dom(f1);
 }
 
@@ -197,17 +128,17 @@ function non_filt() {
   // console.log(data)
   let hotel_array = JSON.parse(localStorage.getItem("data"));
   let f1 = hotel_array.filter(function (el) {
-    return el.Ac == false;
+    return el.Ac == "Not-Aavailable";
   });
   dom(f1);
-  // localStorage.setItem("nonac", JSON.stringify(f1));
+  
 }
 
 let ratingLH = document.getElementById("ratingLH");
 
 ratingLH.addEventListener("click", function () {
   var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
-  //console.log(typeof Price)
+
 
   hotel_array.sort((a, b) => b.Rating - a.Rating);
 
@@ -219,7 +150,7 @@ let ratingHL = document.getElementById("ratingHL");
 
 ratingHL.addEventListener("click", function () {
   var hotel_array = JSON.parse(localStorage.getItem("data")) || [];
-  //console.log(typeof Price)
+
 
   hotel_array.sort((a, b) => a.Rating - b.Rating);
 
