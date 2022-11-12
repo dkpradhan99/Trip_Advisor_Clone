@@ -11,7 +11,7 @@ body{
 #main{
     border: 0px solid red;
     height: auto;
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 20px;
 }
@@ -31,7 +31,7 @@ body{
 }
 #contact{
     width: 100%;
-    border: 1px solid black;
+    border: 0px solid black;
     display: flex;
 }
 #contact>div>input{
@@ -87,7 +87,7 @@ body{
 }
 .statusBox{
     height: 5px;
-    border: 2px solid black;
+    border: 1px solid black;
     width: 100%;
     border-radius: 10px;
 
@@ -104,4 +104,98 @@ p{
 #tdinput>div>input{
     margin-right: 5px;
 }
+#LR{
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    margin-top: 5%;
+
+}
+#left{
+    width: 60%;
+    border: 0px solid black;
+}
+#right{
+    width: 35%;
+    border: 0px solid black;
+}
+#reviewDetail{
+    width: 90%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#rvPara{
+    padding-top: 5%;
+}
+
+#copyright{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+#ROD{
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid red;
+    height: auto;
+    margin-bottom: 30%;
+}
+#ROD1{
+    border: 0px solid red;
+    width: 30%;
+    height: 50%;
+
+}
+#ROD1>img{
+    width: 100%;
+    height: 100%;
+
+}
+#ROD2{
+    border: 0px solid red;
+    width:65% ;
+}
+.bookingFee{
+    display: flex;
+    justify-content: space-between;
+}
+#title{
+    margin-top: 0px;
+    border: 0px solid teal;
+}
+
+#BWC{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border: 0px solid black;
+    height: auto;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-top: 8%;
+}
+#BWC>div{
+    width: 90%;
+    margin: auto;
+}
+.lowestPrice{
+    border: 0px solid green;
+    display: flex;
+    margin-bottom: 5%;
+}
+.lowestPrice>div{
+border: 0px solid black;
+margin-right: 8%;
+}
+.lowestPrice+div>i{
+    size: 20px;
+}
+.lowestPrice>div>p{
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
 

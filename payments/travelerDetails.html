@@ -8,7 +8,6 @@
     <title>Document</title>
     <script src="https://kit.fontawesome.com/290605cd52.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/travelerDetails.css">
-    <link rel="stylesheet" href="./styles/LR.css">
 </head>
 
 <body>
@@ -48,62 +47,128 @@
                         <p>Email<span class="redStar">*</span></p>
                         <input class="boxSize" type="text">
                     </div>
-        
+
                     <div>
                         <p>Phone Number<span class="redStar">*</span></p>
-        
+
                         <select name="" id="sel1" class="boxSize">
                             <option value="+91">+91</option>
                             <option value="">+92</option>
                         </select>
                         <input class="boxSize" type="text">
                     </div>
-        
+
                 </div>
-                <input type="checkbox"><span>Receive text message updates about your booking. Message rates may apply.</span>
+                <input type="checkbox">
+                <p1>Receive text message updates about your booking. Message rates may apply.</p1>
                 <h2>Traveler Details</h2>
                 <p>Lead Traveler</p>
-        
+
                 <!--tdinput = travelerdetails input box -->
                 <div id="tdinput">
                     <div>
                         <p>First name<span class="redStar">*</span></p>
                         <input type="text" class="boxSize">
-        
+
                     </div>
                     <div>
                         <p>Last name<span class="redStar">*</span></p>
                         <input type="text" class="boxSize">
-        
+
                     </div>
                 </div>
-        
-        
+
+
                 <h2>Promo Code</h2>
                 <hr>
                 <a href="">Enter Promo Code</a><br>
                 <button id="next">Next</button>
-        
+
             </div>
 
             <div id="right">
                 <div id="reviewDetail">
-                    
+                    <h2 id="rvPara">Review Order Details</h2>
+                    <!--ROD=revie order details-->
+                    <div id="ROD">
+                        <div id="ROD1">
+
+                        </div>
+                        <div id="ROD2">
+
+                        </div>
+                    </div>
+
+                    <div class="bookingFee">
+                        <div>
+                            <p1>Booking Fee <i class="fa-regular fa-circle-question"></i></p1>
+                        </div>
+                        <div>
+                            <p1>₹ 0.00</p1>
+                        </div>
+                    </div>
+                    <div class="bookingFee">
+                        <div>
+                            <p1>Subtotal:</p1>
+                        </div>
+                        <div>
+                            <p1>₹ 0.00</p1>
+                        </div>
+                    </div>
+                    <div class="bookingFee">
+                        <div>
+                            <p>Total:</p>
+                        </div>
+                        <div>
+                            <p id="totalPrice"></p>
+                        </div>
+                    </div>
+
                 </div>
                 <!--BWC= Book with confiedence div-->
                 <div id="BWC">
-                    <h2>Book with confidence</h2>
-                    <hr>
+                    <div>
+                        <h2>Book with confidence</h2>
+                        <hr>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-wallet"></i></div>
+                            <div>
+                                <p>Lowest price guarantee</p>
+                                <p1>Find it cheaper? We'll refund the difference</p1>
+                            </div>
 
-                    <div class="BWC_card">
-                        <div class="BWC_card_left">
-                            <i class="fa-solid fa-wallet"></i>
                         </div>
-                        <div class="BWC_card_right">
-                            <p>Lowest price guarantee</p>
-                            <p1>Find it cheaper? We'll refund the difference</p1>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-lock"></i></div>
+                            <div>
+                                <p>Privacy protection</p>
+                                <p1>We use SSL encryption to keep your data secure</p1>
+                            </div>
+
                         </div>
+                        <div class="lowestPrice">
+                            <div><i class="fa-sharp fa-solid fa-headphones"></i></div>
+                            <div>
+                                <p>24/7 global support</p>
+                                <p1>Get the answers you need, when you need them</p1>
+                            </div>
+
+                        </div>
+                        <div class="lowestPrice">
+                            <div><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <p>Give us a call</p>
+                                <p1>We’d be happy to help you out with your booking</p1><br>
+                                <p1><a href="">Call now: 000-0800-100-6999</a></p1>
+                            </div>
+
+                        </div>
+
+
                     </div>
+
+
+
                 </div>
 
             </div>
