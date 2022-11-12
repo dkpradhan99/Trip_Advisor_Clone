@@ -1,6 +1,6 @@
 // console.log(1);
 
-let d = JSON.parse(localStorage.getItem("Hotel-Details")) || [];
+let d = JSON.parse(localStorage.getItem("Hotel-Details"));
 console.log(d[0].Images.two);
 console.log(d);
 
@@ -32,3 +32,34 @@ function append(data){
 }
 
 append(d)
+
+// let arrofdata = JSON.parse(localStorage.getItem("Details")) || [];
+// function click(){
+//     let datat = document.getElementById("add21")
+//     datat.onclick = ()=>{
+//         console.log(1);
+//         console.log(d)
+//         // localStorage.setItem("Details",JSON.stringify(arrofdata))
+//     }
+
+// }
+// click()
+
+function click(){
+    let data1=JSON.parse(localStorage.getItem("Hotel-Details"))
+    data1.forEach((el)=>{
+        let arr=JSON.parse(localStorage.getItem("bag"))|| [];
+    
+    document.getElementById("add21").onclick = ()=>{
+    
+        
+    
+        arr.push(el)
+    alert("product added to basket")
+    localStorage.setItem("bag",JSON.stringify(arr))
+}
+});
+}
+click();
+
+
