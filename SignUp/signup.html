@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup
+    </title>
+    <style>
+         @import url(./font/font.css);
+        body{
+            font-family: 'PT Root UI Light';
+        }
+        #main{
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            height: 650px;
+            width: 80%;
+            margin:auto;
+            display: flex;
+        }
+        #sign{
+           
+            height: 100%;
+            width: 50%;
+        
+        }
+        #pic{
+          
+            height: 100%;
+            width: 50%;
+        
+        }
+        form{
+            display: block;
+            /* grid-template-rows: repeat(5,40px);
+            grid-template-columns: repeat(1,300px); */
+            /* grid-gap: 2px; */
+            padding-left: 80px;
+            /* margin-top: -30px; */
+           
+        }
+        
+        input{
+            border-radius: 10px;
+            padding: 7px;
+            width: 75%;
+            border-width:0.5px;
+            border-color: rgb(231, 216, 216);
+            border-width: 1px;
+        }
+        .inputlog{
+            background-color: blue;
+            color: white;
+            width:80%;
+           
+        }
+        h1{
+            text-align: center;
+        }
+        #logo{
+            margin-left: 30%;
+            margin-top: 20px;
+        }
+        #banner{
+            background-color: #f2f5fc;
+            height: 100%;
+            width: 100%;
+        }
+        h4{
+           margin-bottom: 1px;
+           color: rgb(187, 179, 179);
+        }
+        #checkbox{
+            width:15%;
+            border-width: 5px;
+            border-color: black;
+        }
+        span:hover{
+           
+            text-decoration: underline;
+
+        }
+        span{
+            color:blue
+        }
+        .last{
+            margin-top: 5px;
+        }
+        p{
+            margin-left:-10px
+        }
+        #lastline{
+            margin-left:20%
+        }
+        .sitelogin{
+            border:1px solid rgb(231, 216, 216);
+            width:80%;
+            height:32px;
+            border-radius: 5px;
+            text-align:center;
+            display:flex;
+           margin-top: 5px;
+        }
+        .sitelogin:hover{
+            background-color: rgb(228, 220, 220);
+        }
+        .siteloginpic{
+            height:70%;
+            padding-left: 80px;
+            padding-top: 5px;
+        }
+        .sitelogin>div{
+            height:80%;
+            weight:60%;
+           
+            margin:auto;
+        }
+        .sitelogin>div>p{
+           margin-top: 0px;
+           font-size: 18px;
+        }
+        .line:hover{
+            border-color: rgb(161, 161, 228);
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="sign">
+            <img id="logo" src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_Logo_dark-bg_circle-green_horizontal-lockup_registered_RGB.svg" alt="">
+
+            <h1>Join to unlock the best <br/> of Tripadvisor</h1>
+
+            
+        
+            <form>
+                
+                <h4>Name</h4>
+                <input id="user" class="line" type="text" placeholder=" Join Smith"/>
+                <h4>Email</h4>
+                <input id="email" class="line" type="text" placeholder="joinsmith@mail.com"/>
+                <h4>Password</h4>
+                <input id="pass" class="line"  type="password" placeholder="Enter Your Password"/>
+                <br/>
+                <input type="checkbox" id="checkbox" /> <p style="display:inline-block">Yes, inform me on deals & new features.</p>
+                <input class="inputlog" type="submit" value="Join" placeholder="Join"/>
+
+                <h4>---------------Allready a member?---------</h4>
+            
+                
+               
+               
+
+                <p id="lastline"><span onclick="window.location.href='login.html'">login </span>using your Tripadvisor account.</p>
+            
+            </form>
+            
+            
+        </div>
+        
+    </div>
+
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",formSubmit);
+    var userStack=JSON.parse(localStorage.getItem("userDataBase")) || [];
+    
+    function formSubmit(event){
+        event.preventDefault();
+        var email=document.querySelector("#email").value;
+        var pass=document.querySelector("#pass").value;
+        var user=document.querySelector("#user").value;
+       
+
+        var userData={
+            emailAdd:email,
+            passwd:pass,
+            userName:user,
+          
+        };
+
+        let isValid = isUserValid(userData);
+        if (isValid) {
+            userStack.push(userData);
+            localStorage.setItem("userDataBase",JSON.stringify(userStack));
+            alert("Sign up successful");
+            window.location.href="login.html";
+            console.log(userStack);
+        }
+        else{
+            alert("User already Exists!!")
+        }
+    }
+    function isUserValid(user){
+        for (let i = 0; i < userStack.length; i++) {
+            if(userStack[i].emailAdd==user.emailAdd){
+                return false;
+            }            
+        }
+        return true;
+        // console.log(user, userStack);
+    }
+</script>
