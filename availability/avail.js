@@ -45,22 +45,28 @@ append(d)
 // }
 // click()
 
-function click(){
-    let data1=JSON.parse(localStorage.getItem("Hotel-Details"))
-    data1.forEach((el)=>{
-        let arr=JSON.parse(localStorage.getItem("bag"))|| [];
-    
-    document.getElementById("add21").onclick = ()=>{
-    
-        
-    
-        arr.push(el)
-    alert("product added to basket")
-    localStorage.setItem("bag",JSON.stringify(arr))
+let bookNow=document.getElementById("add21");
+    bookNow.addEventListener("click",function(){
+    //alert(100)
+ 
+        window.location.href="../payments/travelerDetails.html"
 
-}
-});
-}
-click();
+})
+
+
+// function click(){
+//     let data1=JSON.parse(localStorage.getItem("Hotel-Details"))
+//     data1.forEach((el)=>{
+//         let arr=JSON.parse(localStorage.getItem("bag"))|| [];
+    
+//     document.getElementById("add21").onclick = ()=>{
+//         arr.push(el)
+//     alert("product added to basket")
+//     localStorage.setItem("bag",JSON.stringify(arr))
+
+// }
+// });
+// }
+// click();
 
 

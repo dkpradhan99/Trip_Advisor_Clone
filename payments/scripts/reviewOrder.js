@@ -1,5 +1,5 @@
 //Fetching data from local storage
-let data=JSON.parse(localStorage.getItem("data"))||[];
+let data=JSON.parse(localStorage.getItem("Hotel-Details"))||[];
 let inputObj=JSON.parse(localStorage.getItem("inputObj"))||[];
 
 let Data=data[0];
@@ -62,7 +62,7 @@ CB.addEventListener("click",function(){
      
    }
    if(otp.length===4){
-    alert("Booking Successful, Have A nice day Dear,")
+    alert("Booking Successful,Thank you for visiting traveladvisor. Have A nice Day")
    }
    window.location.href="../Homepage/index.html"
 

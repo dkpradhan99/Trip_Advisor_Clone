@@ -1,5 +1,5 @@
 //Fetching data from local storage
-let data=JSON.parse(localStorage.getItem("data"))||[];
+let data=JSON.parse(localStorage.getItem("Hotel-Details"))||[];
 let Data=data[0];
 console.log(Data);
 

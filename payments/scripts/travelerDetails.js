@@ -1,4 +1,4 @@
-let data=JSON.parse(localStorage.getItem("data"))||[];
+let data=JSON.parse(localStorage.getItem("Hotel-Details"))||[];
 let Data=data[0];
 console.log(Data);
 let GO=true;
@@ -36,10 +36,12 @@ let dataCollector=()=>{
 
     let firstName=document.getElementById("firstName").value;
     let lastName=document.getElementById("lastName").value;
-    if(email==="" ||phone==="" || firstName===""){
+    if(email=="" ||phone=="" || firstName==""){
         alert("please input valid data");
         GO=false;
-
+    }
+    else{
+        GO=true;
     }
     
     inputObj.email=email;
@@ -60,10 +62,10 @@ let dataCollector=()=>{
 //applying onclickon next button
 let next=document.getElementById("next");
 next.addEventListener("click",function(){
-    //alert(0)
+    alert(0)
     dataCollector();
     if(GO){
-        window.location.href="paymentDetails.html"
+        window.location.href="./paymentDetails.html"
     }
     
 })
