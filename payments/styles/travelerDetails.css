@@ -2,16 +2,42 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #navbar{
-    border: 0px solid red;
-    height: 150px;
-    width: 70%;
     margin: auto;
+    margin-top: 1.2%;
+    margin-bottom: -20px;
+    border: 0px solid red;
+    height: 100px;
+    width: 70%;
+   
+    
+    
+}
+.logoDiv{
+    border: 0px solid green;
+    text-align: center;
+    /* margin-bottom: 1%; */
+}
+.logo {
+    border: 0px solid black;
+    margin: auto;
+    width: 20%;
+
+}
+.hr{
+    /* border: 1px solid red; */
+    margin-bottom: -10px;
+}
+.BTB{
+    /* margin-top: 0px; */
+    text-decoration: none;
+    color: grey;
+    font-size: 13px;
     
 }
 #main{
     border: 0px solid red;
     height: auto;
-    width: 80%;
+    width: 73%;
     margin: auto;
     margin-top: 20px;
 }
@@ -31,7 +57,7 @@ body{
 }
 #contact{
     width: 100%;
-    border: 0px solid black;
+    /* border: 0px solid black; */
     display: flex;
 }
 #contact>div>input{
@@ -43,10 +69,10 @@ body{
 .boxSize{
     border-color:black;
    
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     
 
     border-radius: 5px;
@@ -65,12 +91,7 @@ body{
 #next:hover{
     background-color: rgb(42, 41, 41);
 }
-#logo {
-    /* border: 1px solid; */
-    width: 20%;
-    margin-top: 4%;
 
-}
 #payStatus{
     border: 0px solid black;
     width: 50%;
@@ -109,7 +130,7 @@ p{
     display: flex;
     justify-content: space-between;
     height: auto;
-    margin-top: 5%;
+    /* margin-top: 5%; */
 
 }
 #left{
@@ -123,7 +144,7 @@ p{
 }
 #reviewDetail{
     width: 90%;
-    height: 400px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 10px;
     padding-left: 5%;
@@ -139,26 +160,28 @@ p{
     margin-bottom: 10%;
 }
 #ROD{
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+
     border: 0px solid red;
     height: auto;
-    margin-bottom: 30%;
+
 }
 #ROD1{
     border: 0px solid red;
-    width: 30%;
-    height: 50%;
-
+    margin-top: -15px;
 }
 #ROD1>img{
+    border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: 50%;
+    
+
 
 }
 #ROD2{
-    border: 0px solid red;
-    width:65% ;
+    border: 0px solid rgb(13, 146, 79);
+    /* width:100%; */
+    margin: auto;
 }
 .bookingFee{
     display: flex;
