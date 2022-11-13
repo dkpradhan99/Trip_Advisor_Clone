@@ -62,10 +62,27 @@ let dataCollector=()=>{
 //applying onclickon next button
 let next=document.getElementById("next");
 next.addEventListener("click",function(){
-    alert(0)
+    //alert(0)
     dataCollector();
     if(GO){
         window.location.href="./paymentDetails.html"
     }
     
 })
+
+
+
+//implementing promocode
+// let promo=document.getElementById("promo");
+// promo.addEventListener("click",function(){
+//     let promoCode=prompt("Please, Enter promocode");
+
+//     if(promoCode=="new99"){
+        
+//     }
+//     while(promoCode !=="new99"){
+//         promoCode=prompt("Please, Enter promocode");
+
+//     }
+
+// })

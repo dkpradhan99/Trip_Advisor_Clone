@@ -47,7 +47,7 @@ append(d)
 
 let bookNow=document.getElementById("add21");
     bookNow.addEventListener("click",function(){
-    //alert(100)
+    alert("Redirecting To The Payment Page...");
  
         window.location.href="../payments/travelerDetails.html"
 

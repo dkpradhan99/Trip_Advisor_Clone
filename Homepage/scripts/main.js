@@ -30,3 +30,12 @@ function myFunction() {
     header.style.border = "none";
   }
 }
+
+//implementing avatar
+let sign_in=document.getElementById("sign-in");
+
+let avatarData=JSON.parse(localStorage.getItem("userDataBase"))||[];
+let FN=avatarData[avatarData.length-1].userName;
+console.log((FN));
+
+sign_in.innerHTML=FN
