@@ -1,80 +1,80 @@
 let scenic_spots = [
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/68/2b/0f/merkmal-des-dal-sees.jpg?w=300&h=300&s=1",
-      title: "Dal Lake",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/f0/c9/caption.jpg?w=300&h=300&s=1",
+      title: "Cultural Tours",
       description: "Bodies of Water",
       heart: "../images/heart-modified.png",
       reviews: 6463,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/fa/d8/fd/photo2jpg.jpg?w=300&h=300&s=1",
-      title: "Paradise Beach",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/55/04/61/caption.jpg?w=300&h=300&s=1",
+      title: "Bus Tours",
       description: "Beaches",
       heart: "../images/heart-modified.png",
       reviews: 2354,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/b0/31/f4/the-beaut.jpg?w=300&h=300&s=1",
-      title: "Double Decker Living Root Bridge",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/4d/c1/caption.jpg?w=300&h=300&s=1",
+      title: "Private Sightseeing Tours",
       description: "Bridges",
       heart: "../images/heart-modified.png",
       reviews: 814,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/f5/cb/a2/the-morning-show.jpg?w=300&h=300&s=1",
-      title: "Tiger Hill",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5a/f0/c8/caption.jpg?w=300&h=300&s=1",
+      title: "Historical Tours",
       description: "Lookouts",
       heart: "../images/heart-modified.png",
       reviews: 1808,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/48/2f/eb/mahamrityunjay-temple.jpg?w=300&h=300&s=1",
-      title: "Mahamrityunjay Temple",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5e/89/71/caption.jpg?w=300&h=300&s=1",
+      title: "City Tours",
       description: "Religious Sites",
       heart: "../images/heart-modified.png",
       reviews: 1333,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/ec/dc/15/aru-city.jpg?w=300&h=300&s=1",
-      title: "Aru Valley",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/25/52/d9/caption.jpg?w=300&h=300&s=1",
+      title: "Full-day Tours",
       description: "Valley",
       heart: "../images/heart-modified.png",
       reviews: 927,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/18/54/4a/57/photo0jpg.jpg?w=300&h=300&s=1",
-      title: "7th Mile View Point",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/63/47/ad/caption.jpg?w=300&h=300&s=1",
+      title: "Half-day Tours",
       description: "Lookouts",
       heart: "../images/heart-modified.png",
       reviews: 5113,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/07/0b/38/the-road-takes-you-deeper.jpg?w=300&h=300&s=1",
-      title: "Brinsar Wildlife Sanctuary",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5c/11/c0/caption.jpg?w=300&h=300&s=1",
+      title: "Private Trips",
       description: "Nature & Wildlife Areas",
       heart: "../images/heart-modified.png",
       reviews: 121,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/68/2b/0f/merkmal-des-dal-sees.jpg?w=300&h=300&s=1",
-      title: "Kinnaur",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/25/2e/38/00/caption.jpg?w=300&h=300&s=1",
+      title: "Mountain Bike Tours",
       description: "Valleys",
       heart: "../images/heart-modified.png",
       reviews: 1162,
     },
     {
       image:
-        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/3b/cb/a7/banasura-sagar-dam.jpg?w=300&h=300&s=1",
-      title: "Banasura Sagar Dam",
+        "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/56/5c/79/caption.jpg?w=300&h=300&s=1",
+      title: "Dining Experiences",
       description: "Dams",
       heart: "../images/heart-modified.png",
       reviews: 1181,
@@ -131,7 +131,7 @@ let scenic_spots = [
       re_view.append(div1, div2);
   
       let descrip = document.createElement("p");
-      descrip.innerHTML = description;
+    //   descrip.innerHTML = description;
       descrip.classList.add("description");
   
       card.append(image_content, title_content, re_view, descrip);

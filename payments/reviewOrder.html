@@ -14,7 +14,7 @@
 
 <body>
     <div id="navbar">
-        <img id="logo" src="http://127.0.0.1:5500/jumpy-sound-9573/images/Navbar%20logo.png" alt="logo">
+        <div class="logoDiv"><img class="logo" src="http://127.0.0.1:5500/jumpy-sound-9573/images/Navbar%20logo.png" alt="logo"></div>
         <div id="payStatus">
             <div>
                 <div class="statusBox" id="st1"></div>
@@ -33,12 +33,13 @@
 
         </div>
     </div>
-    <hr>
-
+    <hr class="hr">
+    
     <div id="main">
-        <p1><a href="">Back to Basket <i class="fa-solid fa-angle-left"></i> </a>
-            <a href="">Traveller Details<i class="fa-solid fa-angle-left"></i></a>
-            <a href=""> Payment Details</a>
+        <!--BTW=back to basket section-->
+        <p1><a class="BTB" href="">Back to Basket <i class="fa-solid fa-angle-left"></i> </a>
+            <a class="BTB" href="">Traveller Details<i class="fa-solid fa-angle-left"></i></a>
+            <a class="BTB" href=""> Payment Details</a>
         </p1>
 
 
@@ -53,11 +54,11 @@
                     </div>
                     <div><i class="fa-solid fa-pencil"></i><a id="TD2" href="">Edit</a></div>
                 </div>
-                <h3>Tour: Ubud Tour - Best of Ubud - All Inclusive</h3>
+                <h3 id="Rtitle"></h3>
                 <p>Lead Traveller</p>
-                <p1>peter decinroth</p1>
-                <p1>pk@g.com</p1><br>
-                <p1>9867543218</p1>
+                <p1 id="Rname"></p1><br>
+                <p1 id="Remail">pk@g.com</p1><br>
+                <p1 id="Rphone">9867543218</p1>
                 <hr>
 
                 <!--PD= payment details-->
@@ -71,7 +72,7 @@
                 <hr>
                 <!--TP= total price-->
                 <div id="TP">
-                    <h2>Total Price: ₹14,876.06</h2>
+                    <h2 id="RtotalPrice"></h2>
                     <p1><i class="fa-solid fa-circle-xmark"></i>Non-refundable</p1>
                 </div>
                 <p1>
@@ -116,15 +117,15 @@
                             <p1>Booking Fee <i class="fa-regular fa-circle-question"></i></p1>
                         </div>
                         <div>
-                            <p1>₹ 0.00</p1>
+                            <p1>₹ 99.00</p1>
                         </div>
                     </div>
                     <div class="bookingFee">
                         <div>
-                            <p1>Subtotal:</p1>
+                            <p>Subtotal:</p>
                         </div>
                         <div>
-                            <p1>₹ 0.00</p1>
+                            <p>₹ 99.00</p>
                         </div>
                     </div>
                     <div class="bookingFee">
@@ -195,7 +196,6 @@
 
 </body>
 <script src="./scripts/reviewOrder.js"></script>
-<script src="./scripts/paymentDetails.js"></script>
-<script src="./scripts/travelerDetails.js"></script>
+
 
 </html>

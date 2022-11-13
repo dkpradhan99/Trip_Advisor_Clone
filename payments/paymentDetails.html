@@ -13,7 +13,7 @@
 
 <body>
     <div id="navbar">
-        <img id="logo" src="http://127.0.0.1:5500/jumpy-sound-9573/images/Navbar%20logo.png" alt="logo">
+        <div class="logoDiv"><img class="logo" src="http://127.0.0.1:5500/jumpy-sound-9573/images/Navbar%20logo.png" alt="logo"></div>
         <div id="payStatus">
             <div>
                 <div class="statusBox" id="st1"></div>
@@ -32,10 +32,11 @@
 
         </div>
     </div>
-    <hr>
+    <hr class="hr">
     <div id="main">
-        <p1><a href="">Back to Basket <i class="fa-solid fa-angle-left"></i></a>
-            <a href="">Traveller Details</a>
+        <!--BTW=back to basket section-->
+        <p1><a class="BTB" href="">Back to Basket <i class="fa-solid fa-angle-left"></i></a>
+            <a class="BTB" href="">Traveller Details</a>
         </p1>
 
         <!--LR= left right div-->
@@ -130,7 +131,7 @@
             <div id="right">
                 <div id="reviewDetail">
                     <h2 id="rvPara">Review Order Details</h2>
-                    <!--ROD=revie order details-->
+                    <!--ROD=review order details-->
                     <div id="ROD">
                         <div id="ROD1">
 
@@ -145,15 +146,15 @@
                             <p1>Booking Fee <i class="fa-regular fa-circle-question"></i></p1>
                         </div>
                         <div>
-                            <p1>₹ 0.00</p1>
+                            <p1 id="bookingPrice">₹99.00</p1>
                         </div>
                     </div>
                     <div class="bookingFee">
                         <div>
-                            <p1>Subtotal:</p1>
+                            <p>Subtotal:</p>
                         </div>
                         <div>
-                            <p1>₹ 0.00</p1>
+                            <p>₹ 99.00</p>
                         </div>
                     </div>
                     <div class="bookingFee">
@@ -223,8 +224,9 @@
     </div>
 
 </body>
-<script src="./scripts/paymentDetails.js"></script>
-<script src="./scripts/travelerDetails.js"></script>
+
 
 
 </html>
+
+<script src="./scripts/paymentDetails.js"></script>
