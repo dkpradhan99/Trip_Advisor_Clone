@@ -13,15 +13,15 @@ PROJECT NAME: TRAVEL ADVISOR (Clone of TripAdvisor)
 
 # Traveladvisor
 
-# This website is clone of https://www.tripadvisor.in/
+### This website is clone of https://www.tripadvisor.in/
 
-# Netlify link https://stalwart-fox-86b96a.netlify.app/
+### Netlify link https://stalwart-fox-86b96a.netlify.app/
 
-# Traveladvisor offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants.
+### Traveladvisor offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants.
 
-# Used Techstack here :  JavaScript,HTML and CSS.
+### Used Techstack here :  JavaScript,HTML and CSS.
 
-# Output
+## Output
 ![travel](https://user-images.githubusercontent.com/107466839/210731130-7c443cd5-770d-4f27-b3dd-9f3530262962.png)
 ![Screenshot (73)](https://user-images.githubusercontent.com/107466839/210731196-5f2c845c-7afb-46b8-a6f3-f7c8c026c8ee.png)
 ![Screenshot (74)](https://user-images.githubusercontent.com/107466839/210731219-3afb5187-1e05-44d7-89c1-a9515d4e88c5.png)
