@@ -1,6 +1,5 @@
----
-PROJECT NAME: TRAVEL ADVISOR (Clone of TripAdvisor)
----
+<h1>TRAVEL ADVISOR (Clone of TripAdvisor)</h1>
+Traveladvisor offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants.
 
 # Team Members:-
 ### 1. Dinesh Pradhan
@@ -17,7 +16,7 @@ PROJECT NAME: TRAVEL ADVISOR (Clone of TripAdvisor)
 
 ### Netlify link https://stalwart-fox-86b96a.netlify.app/
 
-### Traveladvisor offers online hotel reservations and bookings for transportation, lodging, travel experiences, and restaurants.
+### 
 
 ### Used Techstack here :  JavaScript,HTML and CSS.
 
