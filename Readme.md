@@ -3,11 +3,11 @@ PROJECT NAME: TRAVEL ADVISOR (Clone of TripAdvisor)
 ---
 
 # Team Members:-
-## 1. Dinesh Pradhan
-## 2. Rahul Dudka
-## 3. Abha Meshram
-## 4. Arth Bhushan
-## 5. Suman Garai
+### 1. Dinesh Pradhan
+### 2. Rahul Dudka
+### 3. Abha Meshram
+### 4. Arth Bhushan
+### 5. Suman Garai
 
 ---
 
